@@ -3,8 +3,7 @@ import React, { Component }  from 'react';
 import ReactDOM from 'react-dom';
 import './index1.css';
 
-
-
+ var html = document.querySelector('html'); var rem = html.offsetWidth / 6.4; html.style.fontSize = rem + "px";
 //import { TouchableOpacity } from 'react-native';
 
 
