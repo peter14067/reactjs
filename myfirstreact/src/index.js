@@ -409,7 +409,7 @@ onClick={(e)=>this.Select(e,this.state)}>{"14"}</button>
   
       const arrButtons=[];
       for(let i=1;i<=49;i++){
-        arrButtons.push( <p1><button style={{background:"transparent",border:"none",fontSize:"5vw",color:"white",textAlign:"left"}}
+        arrButtons.push( <p1><button style={{background:"transparent",border:"none",fontSize:"4vw",color:"white",textAlign:"left"}}
           type="button" button id={i} key={i}
           onClick={(e)=>this.Select(e,this.state)}>{i}</button></p1>)
       }
@@ -455,7 +455,13 @@ const RenderButton=()=>{
 
       
       <div>
-           
+       <p class="rwdtxt">
+    全球有1/4的網站，都是使用WordPress所架設，就連美國白宮官方網站，也是採用WordPress所架設，最主要的原因就在於，WordPress簡易、方便、好操控，同時更助於SEO的優化，以及網路上也有豐富的外掛資源，與佈景主題可使用，就可將WordPress變成購物車、公司官網、活動網站、個人作品網…..，雖然說買佈景很快，但要俢改或加入元素進去時，就相當的麻煩，甚至網站也很肥大，瀏覽速度相當的緩慢，因此這時只有自行開發與設計，才能讓網站方便修改，甚至開啟的速度更快，而開發WordPress佈景一點都不難，也無需了解PHP語法，就能客製化自己的佈景主題來囉
+  </p>
+ 
+  <p>
+    全球有1/4的網站，都是使用WordPress所架設，就連美國白宮官方網站，也是採用WordPress所架設，最主要的原因就在於，WordPress簡易、方便、好操控，同時更助於SEO的優化，以及網路上也有豐富的外掛資源，與佈景主題可使用，就可將WordPress變成購物車、公司官網、活動網站、個人作品網…..，雖然說買佈景很快，但要俢改或加入元素進去時，就相當的麻煩，甚至網站也很肥大，瀏覽速度相當的緩慢，因此這時只有自行開發與設計，才能讓網站方便修改，甚至開啟的速度更快，而開發WordPress佈景一點都不難，也無需了解PHP語法，就能客製化自己的佈景主題來囉
+  </p>   
       <h1> 大樂透小遊戲</h1>
       <div class='container1'>{lotterynumber}</div>
       <br></br>
