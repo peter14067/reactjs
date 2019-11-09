@@ -409,7 +409,7 @@ onClick={(e)=>this.Select(e,this.state)}>{"14"}</button>
   
       const arrButtons=[];
       for(let i=1;i<=49;i++){
-        arrButtons.push( <p1><button style={{background:"transparent",border:"none",fontSize:"4vw",color:"white",textAlign:"left"}}
+        arrButtons.push( <p1><button style={{background:"transparent",border:"none",color:"white",textAlign:"right"}}
           type="button" button id={i} key={i}
           onClick={(e)=>this.Select(e,this.state)}>{i}</button></p1>)
       }
@@ -462,6 +462,16 @@ const RenderButton=()=>{
       <br></br>
       <br></br>
       <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+     
       
         
         <h1>距離下次開獎倒數  {this.state.time}  秒      </h1>
@@ -484,11 +494,11 @@ const RenderButton=()=>{
         <br></br> 
         <h1 ></h1>           
         <h1 >當期樂透號碼</h1>
-        <div>{lists1}</div>
+        <p3>{lists1}</p3>
         <br></br>
         <br></br>
         <h1>玩家所選號碼</h1>
-        <div class='psl'>{lists}     </div>
+        <p3>{lists}     </p3>
 
 
         <br></br>
