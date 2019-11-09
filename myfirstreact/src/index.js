@@ -409,11 +409,11 @@ onClick={(e)=>this.Select(e,this.state)}>{"14"}</button>
   
       const arrButtons=[];
       for(let i=1;i<=49;i++){
-        arrButtons.push( <p1><button style={{background:"transparent",border:"none",color:"white"}}
+        arrButtons.push( <p1><button style={{background:"transparent",border:"none",color:"white",textAlign:"left"}}
           type="button" button id={i} key={i}
           onClick={(e)=>this.Select(e,this.state)}>{i}</button></p1>)
       }
-    let lotterynumber= arrButtons.map(function(list){return <div>{list}</div>})
+    let lotterynumber= arrButtons.map(function(list){return <div >{list}</div>})
 
 
 
@@ -457,7 +457,7 @@ const RenderButton=()=>{
       <div>
       
       <h1> 大樂透小遊戲</h1>
-      <div class='container1'>{lotterynumber}</div>
+      <div class='container1' >{lotterynumber}</div>
       <br></br>
       <br></br>
       <br></br>
