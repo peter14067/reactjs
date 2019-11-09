@@ -52,8 +52,10 @@ h3{
 h1{
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: 5vw;
-text-shadow: 0.1em 0.1em 0.2em black
-
+text-shadow: 0.1em 0.1em 0.2em black;
+float: left;
+display: block;
+width:100%;
 }
 
 
@@ -123,13 +125,14 @@ p1{
  display: block;
  float: left;
  height: 0.7vw;
- padding: 0.00001vw 0.00001vw 3vw 2vw;
+ padding: 0.00001vw 0.00001vw 2vw 2vw;
 font-size:7vw 20vw 10vw 2vw;
- text-align: left;
+ text-align: lett;
  position: relative;
  vertical-align: top;
- width:6vw;
+ width:4vw;
  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+ 
 }
 
 #button2{
@@ -164,6 +167,18 @@ button{
 <BUTTON STYLE="background-color: transparent;" onClick="window.location='1.html'"><font color="#00ff00" size="2">
 
 
+
+
+.lottery{
+
+  border:5 solid black;
+  
+}
+
+
+
+
+
 .game-info {
   margin-left: 20px;
 }
@@ -175,7 +190,7 @@ button{
 
 .container 1{
   overflow: hidden;
- 
+  color:red;
   height: 100%;
  
   height: -moz-available;
@@ -222,6 +237,11 @@ button{
   background: white;
 
 }
+
+
+
+
+
 .bonus1{
 
   font-size:50px;
@@ -252,3 +272,18 @@ p3{
 
 
 }
+
+
+
+@media screen and (min-width:500px){ 
+  .box{
+    width: 500px;
+    background-color: green;
+  }
+ }
+ @media screen and (min-width:1000px){ 
+  .box{
+    width: 1000px;
+    background-color: blue;
+  }
+ }

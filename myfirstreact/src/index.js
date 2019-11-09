@@ -455,9 +455,18 @@ const RenderButton=()=>{
 
       
       <div>
+
+      <h1 >距離下次開獎倒數  {this.state.time}  秒      </h1>
+      <div  >
+      <div><h1 style={{backgroundColor:"orange"}}> 在數字1~49號選取6個號碼</h1></div>
+      <div class='container1' >{lotterynumber}
+        
+     
       
-      <h1> 大樂透小遊戲</h1>
-      <div class='container1' >{lotterynumber}</div>
+      
+      
+      
+      </div>
       <br></br>
       <br></br>
       <br></br>
@@ -472,13 +481,15 @@ const RenderButton=()=>{
       <br></br>
       <br></br>
      
-      
+      </div>
         
-        <h1>距離下次開獎倒數  {this.state.time}  秒      </h1>
+       
         <h1>累積獎金       <div class='bonus'>    $ {this.state.money}</div></h1>
         <br></br>
         
-
+        <button 
+          type="button" onClick={this.Bet}
+        >重置</button>   
 
       
         <h1>請選擇號碼  </h1>         
