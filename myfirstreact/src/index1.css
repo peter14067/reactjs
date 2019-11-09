@@ -188,17 +188,11 @@ button{
   background-image: url(./demo.png);
 }
 
-.container 1{
-  overflow: hidden;
-  
-  height: 100%;
+.container1{
  
-  height: -moz-available;
- 
-  height: -webkit-fill-available;  
- 
-  height: fill-available;
-  
+  display:block;
+  width:98.7vw;
+  float: left;
 }
 .container {
   overflow: hidden;
@@ -302,7 +296,7 @@ p3{
   
   display:block;
  padding:5px;
- 
+ width:100%
 
 }
 

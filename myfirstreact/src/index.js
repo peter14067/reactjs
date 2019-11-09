@@ -473,27 +473,27 @@ const RenderButton=()=>{
       <h1 >下次開獎倒數  {this.state.time}  秒    累積獎金 $ {this.state.money}  </h1>  
       
       </div>
-      <div  style={{backgroundColor:"red"}}>
+      <div  style={{backgroundColor:"grey"}}>
       <div><h1 style={{backgroundColor:"orange"}}> 在數字1~49號選取6個號碼</h1></div>
       <div class='container1' >{lotterynumber}      </div>
      </div>
      
      
-   
-     <div >
      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br> <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+     <div >
+     
      <div style={{backgroundColor:"black",display:"block"}}>
      <div class="flex-column1">
-      <button style={{fontSize:"25px",width:"150px",marginLeft:"0px",marginRight:"20px",backgroundColor:"greenyellow",position:"relative"}}
+      <button style={{fontSize:"3.5vw",width:"30%",marginLeft:"0px",marginRight:"20px",backgroundColor:"greenyellow",position:"relative"}}
           type="button" onClick={this.Reset}
         >重置</button>  
       
-      <button  style={{fontSize:"25px",width:"500px",backgroundColor:"greenyellow",position:"absolute"}}
+      <button  style={{fontSize:"3.5vw",width:"63%",backgroundColor:"greenyellow",position:"absolute"}}
           type="button" onClick={this.Bet}
         >幸運選號</button>  
         <br></br>
 
-<button  style={{fontSize:"25px",width:"670px",backgroundColor:"greenyellow",marginTop:"20px"}}
+<button  style={{fontSize:"3.5vw",width:"100%",backgroundColor:"greenyellow",marginTop:"20px"}}
           type="button" onClick={this.Bet}
         >確定</button>  
      
