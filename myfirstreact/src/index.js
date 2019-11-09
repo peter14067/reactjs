@@ -409,7 +409,7 @@ onClick={(e)=>this.Select(e,this.state)}>{"14"}</button>
   
       const arrButtons=[];
       for(let i=1;i<=49;i++){
-        arrButtons.push( <p1><button style={{background:"transparent",border:"none",color:"white",textAlign:"right"}}
+        arrButtons.push( <p1><button style={{background:"transparent",border:"none",color:"white"}}
           type="button" button id={i} key={i}
           onClick={(e)=>this.Select(e,this.state)}>{i}</button></p1>)
       }
