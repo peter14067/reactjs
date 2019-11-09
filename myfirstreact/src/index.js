@@ -47,10 +47,23 @@ class Main extends React.Component{
     this.Select=this.Select.bind(this);
     this.MyCounter=this.MyCounter.bind(this);
     this.Bet=this.Bet.bind(this);
+    this.Reset=this.Reset.bind(this);
   }
 
 
+  Reset=()=>
+  {
 
+
+    const m=this.state.data2
+  
+ 
+ this.setState({...this.state,data2:[]})
+ 
+  
+ 
+
+}
 
 
   Bet=()=>
@@ -456,7 +469,10 @@ const RenderButton=()=>{
       
       <div>
       <div></div>
-      <h1 >距離下次開獎倒數  {this.state.time}  秒      </h1>
+      <div style={{display:"block"}}>
+      <h1 >下次開獎倒數  {this.state.time}  秒    累積獎金 $ {this.state.money}  </h1>  
+      
+      </div>
       <div  style={{backgroundColor:"red"}}>
       <div><h1 style={{backgroundColor:"orange"}}> 在數字1~49號選取6個號碼</h1></div>
       <div class='container1' >{lotterynumber}      </div>
@@ -469,7 +485,7 @@ const RenderButton=()=>{
      <div style={{backgroundColor:"black",display:"block"}}>
      <div class="flex-column1">
       <button style={{fontSize:"25px",width:"150px",marginLeft:"0px",marginRight:"20px",backgroundColor:"greenyellow",position:"relative"}}
-          type="button" onClick={this.Bet}
+          type="button" onClick={this.Reset}
         >重置</button>  
       
       <button  style={{fontSize:"25px",width:"500px",backgroundColor:"greenyellow",position:"absolute"}}
@@ -485,15 +501,15 @@ const RenderButton=()=>{
       </div>
       </div>
        
-        <h1>累積獎金       <div class='bonus'>    $ {this.state.money}</div></h1>
+       
         
        
 
       
-        <h1>第一組選擇的號碼</h1>  
+        <h1>請選擇號碼</h1>  
         
-        <h2 style={{float:"left"}}>{this.state.data2.sort(function(a,b){return a-b}
-        )}{selectnumber}</h2>
+        <p3>{this.state.data2.sort(function(a,b){return a-b}
+        )}{selectnumber}</p3>
          
         
         <br></br>
@@ -505,7 +521,7 @@ const RenderButton=()=>{
         <p3>{lists1}</p3>
         <br></br>
         <br></br>
-        <h1>玩家所選號碼</h1>
+        <h1>第一組玩家選號</h1>
         <p3>{lists}     </p3>
 
 
@@ -527,6 +543,45 @@ const RenderButton=()=>{
 
 
         <br></br>
+        <br></br>
+        <br></br>
+        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br><br></br>
+        <br></br>
+        <br></br>
+        <br></br><br></br>
         <br></br>
         <br></br>
         <br></br>
