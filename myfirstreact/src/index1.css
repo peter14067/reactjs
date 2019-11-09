@@ -190,7 +190,7 @@ button{
 
 .container 1{
   overflow: hidden;
-  color:red;
+  
   height: 100%;
  
   height: -moz-available;
@@ -285,5 +285,29 @@ p3{
   .box{
     width: 1000px;
     background-color: blue;
+
   }
  }
+
+
+ .flex-column {
+  widows: 50%px;;
+}
+.flex-column2{
+  
+  
+ 
+}
+.flex-column1{
+  
+  display:block;
+ padding:5px;
+ 
+
+}
+
+.none {
+  -webkit-flex: none;
+          flex: none;
+  width: 50px;
+}

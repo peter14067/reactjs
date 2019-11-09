@@ -455,50 +455,47 @@ const RenderButton=()=>{
 
       
       <div>
-
+      <div></div>
       <h1 >距離下次開獎倒數  {this.state.time}  秒      </h1>
-      <div  >
+      <div  style={{backgroundColor:"red"}}>
       <div><h1 style={{backgroundColor:"orange"}}> 在數字1~49號選取6個號碼</h1></div>
-      <div class='container1' >{lotterynumber}
-        
+      <div class='container1' >{lotterynumber}      </div>
+     </div>
      
+     
+   
+     <div >
+     <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br> <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+     <div style={{backgroundColor:"black",display:"block"}}>
+     <div class="flex-column1">
+      <button style={{fontSize:"25px",width:"150px",marginLeft:"0px",marginRight:"20px",backgroundColor:"greenyellow",position:"relative"}}
+          type="button" onClick={this.Bet}
+        >重置</button>  
       
-      
-      
-      
-      </div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <button  style={{fontSize:"25px",width:"500px",backgroundColor:"greenyellow",position:"absolute"}}
+          type="button" onClick={this.Bet}
+        >幸運選號</button>  
+        <br></br>
+
+<button  style={{fontSize:"25px",width:"670px",backgroundColor:"greenyellow",marginTop:"20px"}}
+          type="button" onClick={this.Bet}
+        >確定</button>  
      
       </div>
-        
+      </div>
+      </div>
        
         <h1>累積獎金       <div class='bonus'>    $ {this.state.money}</div></h1>
-        <br></br>
         
-        <button 
-          type="button" onClick={this.Bet}
-        >重置</button>   
+       
 
       
-        <h1>請選擇號碼  </h1>         
-        <h2>{this.state.data2.sort(function(a,b){return a-b}
+        <h1>第一組選擇的號碼</h1>  
+        
+        <h2 style={{float:"left"}}>{this.state.data2.sort(function(a,b){return a-b}
         )}{selectnumber}</h2>
          
-         <button class='b'
-          type="button" onClick={this.Bet}
-        >確定</button>    
+        
         <br></br>
         <br></br>
         <br></br>      
