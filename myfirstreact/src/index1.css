@@ -124,16 +124,17 @@
    border-radius: 20px;
    background-image: linear-gradient(to top, rgb(0, 183, 255), blue);
    border: 3px solid #0055d4;
-   color: #fff;
+   
    display: block;
    float: left;
    height: 0.7vw;
-   padding: 0.00001vw 0.00001vw 2vw 2vw;
-  font-size:7vw 20vw 10vw 2vw;
-   text-align: lett;
-   position: relative;
-   vertical-align: top;
-   width:4vw;
+   padding: 10vw 10vh 10vw 10vw;
+   width:20vh;
+  font-size:1em;
+   text-align: left;
+   
+   
+   width:20vw;
    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
    
   }
@@ -192,22 +193,17 @@
   }
   
   .container1{
-   
+    font-size: 0.7em;
+    text-align: left;
     display:block;
-    width:98.7vw;
-    float: left;
+ 
+    
   }
   .container {
-    overflow: hidden;
-    background-color:red;
-    
-    height: 100%;
-   
-    height: -moz-available;
-   
-    height: -webkit-fill-available;  
-   
-    height: fill-available;
+    max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
   }
   .right {
     float: right;
@@ -430,7 +426,7 @@ font-size:7vw 20vw 10vw 2vw;
  text-align: lett;
  position: relative;
  vertical-align: top;
- width:4vw;
+ width:4vw ;
  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
  
 }
@@ -888,4 +884,24 @@ p3{
   -webkit-flex: none;
           flex: none;
   width: 50px;
+}
+
+
+
+@media (min-width: 600px) {
+  
+  p1{
+  font-size: 1em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+}
+
+
+.c1{
+  background-color: grey;
+}
+
+.c1, .c2, .c3 {
+  width: 100%;
+  border: 1px solid #000;
 }

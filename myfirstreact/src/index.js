@@ -422,7 +422,7 @@ onClick={(e)=>this.Select(e,this.state)}>{"14"}</button>
   
       const arrButtons=[];
       for(let i=1;i<=49;i++){
-        arrButtons.push( <p1><button style={{background:"transparent",border:"none",color:"white",textAlign:"left"}}
+        arrButtons.push( <p1><button style={{background:"transparent",border:"none",color:"white",textAlign:"center",padding:"0.005vh"}}
           type="button" button id={i} key={i}
           onClick={(e)=>this.Select(e,this.state)}>{i}</button></p1>)
       }
@@ -476,6 +476,7 @@ const RenderButton=()=>{
       <div  style={{backgroundColor:"grey"}}>
       <div><h1 style={{backgroundColor:"orange"}}> 在數字1~49號選取6個號碼</h1></div>
       <div class='container1' >{lotterynumber}      </div>
+      
      </div>
      
      
