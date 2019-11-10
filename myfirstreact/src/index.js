@@ -485,18 +485,20 @@ const RenderButton=()=>{
      
      <div style={{backgroundColor:"black",display:"block"}}>
      <div class="flex-column1">
-      <button style={{fontSize:"3.5vw",width:"30%",marginLeft:"0px",marginRight:"20px",backgroundColor:"greenyellow",position:"relative"}}
+      <button style={{fontSize:"1em",width:"30%",marginLeft:"0",marginRight:"3%",backgroundColor:"greenyellow",position:"relative"}}
           type="button" onClick={this.Reset}
         >重置</button>  
       
-      <button  style={{fontSize:"3.5vw",width:"63%",backgroundColor:"greenyellow",position:"absolute"}}
+      <button  style={{fontSize:"1em",width:"58%",backgroundColor:"greenyellow",position:"absolute"}}
           type="button" onClick={this.Bet}
         >幸運選號</button>  
-        <br></br>
+        
 
-<button  style={{fontSize:"3.5vw",width:"100%",backgroundColor:"greenyellow",marginTop:"20px"}}
+<button  class="sure" 
+  
           type="button" onClick={this.Bet}
         >確定</button>  
+       
      
       </div>
       </div>

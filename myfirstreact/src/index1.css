@@ -279,8 +279,8 @@
   }
   .flex-column1{
     
-    display:block;
-   padding:5px;
+  display:block;
+   padding:1vw;
    width:100%
   
   }
@@ -886,14 +886,41 @@ p3{
   width: 50px;
 }
 
+.sure{
+  background-color: greenyellow;
+  font-size:1em;
+  width:98%;
 
+  margin-top:1vh;
+}
 
 @media (min-width: 600px) {
   
   p1{
   font-size: 1em;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
   }
+
+
+
+  .flex-column1{
+    
+  display:block;
+   padding:1vw;
+   width:110%
+
+  
+  }
+
+  .sure{
+    background-color: greenyellow;
+    font-size:1em;
+    width:90%;
+
+    margin-top:1vh;
+  }
+
 }
 
 
