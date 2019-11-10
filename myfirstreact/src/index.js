@@ -67,7 +67,7 @@ class Main extends React.Component{
     if(this.state.data2.length<6){
 
   
-    const element= Math.floor((Math.random()*10)+1);
+    const element= Math.floor((Math.random()*49)+1);
   
     
   const data1=this.state.data2;
@@ -111,18 +111,26 @@ this.setState({...this.state,data2:data1})
   {
  const m=this.state.money
  const b=this.state.data2
+ const p=this.state.data8
  const c=this.state.cog
  const d=this.state.hint
  const t=this.state.time
   let a=parseInt(m+500);
-  if(c.length==0){
+  
 
+
+
+
+  if(p.length==0){
+
+  if(c.length==0 ){
+   
     if(time<40){
  if(b.length==6){
  alert("下注成功")
  this.setState({...this.state,num:b,money:a,data8:b,data2:[],hint:["成功選擇號碼,等待開獎中"]})
  }else{
-  alert("請選擇剩下號碼")
+   alert("請選擇剩下號碼")
  }
 }else{
   alert("開獎中，不能選擇號碼")
@@ -134,9 +142,12 @@ this.setState({...this.state,data2:data1})
       alert("開獎中，不能選擇號碼")
     }
 
+ 
     }
 
-  
+  }else{
+    alert("你已選擇號碼了")
+  }
 }
 
 
@@ -410,7 +421,7 @@ this.setState({...this.state,data4:arr,cog:"再接再厲吧",bonus:a,money:b,num
     if(this.state.data.length<6){
 
   
-    const element= Math.floor((Math.random()*10)+1);
+    const element= Math.floor((Math.random()*49)+1);
   
     
   const data1=this.state.data;
