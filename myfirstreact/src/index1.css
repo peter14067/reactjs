@@ -261,6 +261,7 @@
    display: block;
    float: left;
    height: 20px;
+
    
   
   
@@ -898,6 +899,11 @@ p3{
   width:9vw;
   }
 
+  p3{
+
+
+    width:100vw
+  }
 
 }
 

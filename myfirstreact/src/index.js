@@ -9,7 +9,7 @@ import './index1.css';
 
  const myVar="";
 const blue='blue';
-let time = 60;//倒數7秒
+let time = 40;//倒數7秒
 let mny="";
 let m="";
 var bg=require('H:/工作備分/新增資料夾 (2)/reactjs/myfirstreact/src/demo.png')
@@ -34,7 +34,7 @@ class Main extends React.Component{
       cog:"",
       cog1:"",
       date: new Date(),
-      time:60,
+      time:40,
       ltwin:[],
       ltt:[],
       ltn:[],
