@@ -479,11 +479,15 @@ const RenderButton=()=>{
       
      </div>
      
-     
-     <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br> <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+     <div class="empty">
+     <h1>選擇的號碼<p3>{this.state.data2.sort(function(a,b){return a-b}
+        )}{selectnumber}</p3></h1>
+      </div>
+      <br></br>
      <div >
      
-     <div style={{backgroundColor:"black",display:"block"}}>
+     <div style={{backgroundColor:"pink",display:"block"}}>
+      
      <div class="flex-column1">
       <button style={{fontSize:"1em",width:"30%",marginLeft:"0",marginRight:"3%",backgroundColor:"greenyellow",position:"relative"}}
           type="button" onClick={this.Reset}
@@ -491,13 +495,14 @@ const RenderButton=()=>{
       
       <button  style={{fontSize:"1em",width:"58%",backgroundColor:"greenyellow",position:"absolute"}}
           type="button" onClick={this.Bet}
-        >幸運選號</button>  
+        >自動選號</button>  
         
 
-<button  class="sure" 
+<button  class="sure"   
   
           type="button" onClick={this.Bet}
         >確定</button>  
+        
        
      
       </div>
@@ -511,8 +516,7 @@ const RenderButton=()=>{
       
         <h1>請選擇號碼</h1>  
         
-        <p3>{this.state.data2.sort(function(a,b){return a-b}
-        )}{selectnumber}</p3>
+        
          
         
         <br></br>
