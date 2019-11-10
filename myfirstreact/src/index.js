@@ -38,7 +38,8 @@ class Main extends React.Component{
       ltwin:[],
       ltt:[],
       ltn:[],
-      ltb:[]
+      ltb:[],
+      hint:["請在1~49選擇6個號碼"]
     }
 
 
@@ -48,8 +49,48 @@ class Main extends React.Component{
     this.MyCounter=this.MyCounter.bind(this);
     this.Bet=this.Bet.bind(this);
     this.Reset=this.Reset.bind(this);
+    this.Auto=this.Auto.bind(this);
   }
 
+
+
+  Auto=()=>
+  {
+
+   
+    //if(data11.length!=0){
+      //this.setState({...this.state,data4:[],data:[],cog:"",data8:[],ltn:[]})
+    //}
+
+    for(let i=0;i<=20;i++){
+   
+    if(this.state.data2.length<6){
+
+  
+    const element= Math.floor((Math.random()*10)+1);
+  
+    
+  const data1=this.state.data2;
+  
+ //{console.log(data1)}
+// {console.log(element)}
+
+ if(data1.indexOf(element)===-1){
+  
+  data1.push(element);
+ 
+this.setState({...this.state,data2:data1})
+           }
+
+       }
+    
+ }
+
+ 
+  
+ 
+
+}
 
   Reset=()=>
   {
@@ -70,17 +111,32 @@ class Main extends React.Component{
   {
  const m=this.state.money
  const b=this.state.data2
- const c=this.state.num
- 
+ const c=this.state.cog
+ const d=this.state.hint
+ const t=this.state.time
   let a=parseInt(m+500);
- 
+  if(c.length==0){
+
+    if(time<40){
  if(b.length==6){
  alert("下注成功")
- this.setState({...this.state,num:b,money:a,data8:b,data2:[]})
+ this.setState({...this.state,num:b,money:a,data8:b,data2:[],hint:["成功選擇號碼,等待開獎中"]})
  }else{
   alert("請選擇剩下號碼")
  }
+}else{
+  alert("開獎中，不能選擇號碼")
+}
 
+}else if(c.length!==0 ){
+    if(time>40 && time<=60){
+      
+      alert("開獎中，不能選擇號碼")
+    }
+
+    }
+
+  
 }
 
 
@@ -124,8 +180,9 @@ Draw=(e)=>{
   //const data3=this.state.data2;
  
   const data3=this.state.data8;
-  const m=this.state.money
-  const n=this.state.num
+  const m=this.state.money;
+  const n=this.state.num;
+  const h=this.state.hint
 {console.log(data1)}
 {console.log(data3)}
   if(data1.length==6 && data3.length==6){
@@ -158,35 +215,82 @@ let b=m-a;
   
   });
  */
-  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"-----"     +"再接再厲吧",bonus:a,money:b,num:[]})
+this.setState({...this.state,data4:arr,cog:"再接再厲吧",bonus:a,money:b,num:[],hint:["開獎中"]})
 }else if(arr.length==1){
   {console.log(arr.length)}
   let a=0
   let b=m-a;
-  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"-----"     +"再接再厲吧",bonus:a,money:b,num:[]})
+  this.setState({...this.state,data4:arr,cog:"再接再厲吧",bonus:a,money:b,num:[],hint:["開獎中"]})
 }else if(arr.length==2){
   {console.log(arr.length)}
   let a=0;
   let b=m-a;
-  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"-----"      +"再接再厲吧",bonus:a,money:b,num:[]})
+  this.setState({...this.state,data4:arr,cog:"再接再厲吧",bonus:a,money:b,num:[],hint:["開獎中"]})
 }else if(arr.length==3){
   let a=Math.floor(m*(1/10));
   let b=m-a;
-  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"-----"      +"是參獎",num:[]})
+  alert("恭喜中肆獎!");
+  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"-----"      +"是肆獎",bonus:a,money:b,num:[],hint:["開獎中"]})
 }else if(arr.length==4){
   let a=Math.floor(m*(2/10));
   let b=m-a;
-  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"是"+arr.length+"是貳獎",})
+  alert("恭喜中參獎!");
+  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"是"+arr.length+"是參獎",bonus:a,money:b,num:[],hint:["開獎中"]})
 }else if(arr.length==5){
   let a=Math.floor(m*(3/10));
   let b=m-a;
-  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"是"+arr.length+"是頭獎"})
+  alert("恭喜中貳獎!");
+  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"是"+arr.length+"是貳獎",bonus:a,money:b,num:[],hint:["開獎中"]})
 }else if(arr.length==6){
   let a=Math.floor(m*(4/10));
   let b=m-a;
-  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"是"+arr.length+"是頭獎"})
+  alert("恭喜中頭獎!");
+  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"---------"+arr.length+"是頭獎"})
 }
+
+/*
+
+  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"-----"     +"再接再厲吧",bonus:a,money:b,num:[],hint:["開獎中"]})
+}else if(arr.length==1){
+  {console.log(arr.length)}
+  let a=0
+  let b=m-a;
+  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"-----"     +"再接再厲吧",bonus:a,money:b,num:[],hint:["開獎中"]})
+}else if(arr.length==2){
+  {console.log(arr.length)}
+  let a=0;
+  let b=m-a;
+  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"-----"      +"再接再厲吧",bonus:a,money:b,num:[],hint:["開獎中"]})
+}else if(arr.length==3){
+  let a=Math.floor(m*(1/10));
+  let b=m-a;
+  alert("恭喜中肆獎!");
+  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"-----"      +"是肆獎",bonus:a,money:b,num:[],hint:["開獎中"]})
+}else if(arr.length==4){
+  let a=Math.floor(m*(2/10));
+  let b=m-a;
+  alert("恭喜中參獎!");
+  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"是"+arr.length+"是參獎",bonus:a,money:b,num:[],hint:["開獎中"]})
+}else if(arr.length==5){
+  let a=Math.floor(m*(3/10));
+  let b=m-a;
+  alert("恭喜中貳獎!");
+  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"是"+arr.length+"是貳獎",bonus:a,money:b,num:[],hint:["開獎中"]})
+}else if(arr.length==6){
+  let a=Math.floor(m*(4/10));
+  let b=m-a;
+  alert("恭喜中頭獎!");
+  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"---------"+arr.length+"是頭獎"})
 }
+
+
+
+*/
+
+}
+
+
+
 
 
   //{console.log(this.state.data6)}
@@ -214,6 +318,7 @@ let b=m-a;
    const h=this.state.cog
    const i=this.state.ltn
    const k=this.state.bonus
+   const q=this.state.hint
     if(time>0){
       
     
@@ -221,9 +326,12 @@ let b=m-a;
 
       if(time==40){
 
+        if(h.length!=0){
+          this.setState({...this.state,hint:["請在1~4選擇6個號碼"]})
+        }
 
         if(e.length!=0){
-          this.setState({...this.state,data10:e,data:[],ltn:[],ltwin:[],cog1:h,ltb:[]})
+          this.setState({...this.state,data10:e,data:[],ltn:[],ltwin:[],cog1:h,ltb:[],hint:["請在1~4選擇6個號碼"]})
         }
 
         if(e.length!=0 && c.length!=0 && d.length!=0 ){
@@ -232,7 +340,7 @@ let b=m-a;
 
         if(e.length!=0  && h.length!=0 &&d.length!=0 &&f.length!=0 &&i.length!=0){
 
-          this.setState({...this.state,data10:e,ltn:[],ltwin:[],data8:[],data4:[],bonus:[],ltt:h,cog1:h,cog:[],ltb:[]})
+          this.setState({...this.state,data10:e,ltn:[],ltwin:[],data8:[],data4:[],bonus:[],ltt:h,cog1:h,cog:[],ltb:[],hint:["請在1~4選擇6個號碼"]})
         
         
          }
@@ -240,7 +348,7 @@ let b=m-a;
 
         if(e.length!=0 && c.length!=0 && h.length!=0){
 
-        this.setState({...this.state,data10:e,data:[],ltn:c,ltwin:l,data8:[],data4:[],data:[],bonus:[],ltt:h,cog:[],ltb:k})
+        this.setState({...this.state,data10:e,data:[],ltn:c,ltwin:l,data8:[],data4:[],data:[],bonus:[],ltt:h,cog:[],ltb:k,hint:["請在1~4選擇6個號碼"]})
       
       
        }
@@ -302,7 +410,7 @@ let b=m-a;
     if(this.state.data.length<6){
 
   
-    const element= Math.floor((Math.random()*49)+1);
+    const element= Math.floor((Math.random()*10)+1);
   
     
   const data1=this.state.data;
@@ -314,7 +422,7 @@ let b=m-a;
   
   data1.push(element);
  
-this.setState({...this.state,data:data1})
+this.setState({...this.state,data:data1,hint:["開獎中"]})
            }
 
        }
@@ -471,19 +579,20 @@ const RenderButton=()=>{
       <div></div>
       <div style={{display:"block"}}>
       <h1 >下次開獎倒數  {this.state.time}  秒    累積獎金 $ {this.state.money}  </h1>  
-      
+    
       </div>
       <div  style={{backgroundColor:"grey"}}>
-      <div><h1 style={{backgroundColor:"orange"}}> 在數字1~49號選取6個號碼</h1></div>
+      <div><h1 style={{backgroundColor:"orange"}}> {this.state.hint}</h1>
+      <p3 style={{height:"10vh"}}>{selectnumber}</p3>
+      </div>
       <div class='container1' >{lotterynumber}      </div>
       
      </div>
      
      <div class="empty">
-     <h1>選擇的號碼<p3>{this.state.data2.sort(function(a,b){return a-b}
-        )}{selectnumber}</p3></h1>
+       
       </div>
-      <br></br>
+      
      <div >
      
      <div style={{backgroundColor:"pink",display:"block"}}>
@@ -491,10 +600,10 @@ const RenderButton=()=>{
      <div class="flex-column1">
       <button style={{fontSize:"1em",width:"30%",marginLeft:"0",marginRight:"3%",backgroundColor:"greenyellow",position:"relative"}}
           type="button" onClick={this.Reset}
-        >重置</button>  
+        >重新選擇</button>  
       
       <button  style={{fontSize:"1em",width:"58%",backgroundColor:"greenyellow",position:"absolute"}}
-          type="button" onClick={this.Bet}
+          type="button" onClick={this.Auto}
         >自動選號</button>  
         
 
@@ -508,34 +617,13 @@ const RenderButton=()=>{
       </div>
       </div>
       </div>
+     
+        <h1>玩家選號</h1>
        
-       
-        
-       
-
-      
-        <h1>請選擇號碼</h1>  
-        
-        
-         
-        
-        <br></br>
-        <br></br>
-        <br></br>      
-        <br></br> 
-        <h1 ></h1>           
+        <p3> {this.state.data8.sort(function(a,b){return a-b}
+        )}{lists}     </p3>
         <h1 >當期樂透號碼</h1>
-        <p3>{lists1}</p3>
-        <br></br>
-        <br></br>
-        <h1>第一組玩家選號</h1>
-        <p3>{lists}     </p3>
-
-
-        <br></br>
-        <br></br>
-        
-        
+        <p3>{lists1}</p3>        
         
         <h1>中獎號碼</h1>
         <div>{prizenumber}</div>

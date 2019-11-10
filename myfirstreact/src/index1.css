@@ -408,28 +408,6 @@ p1{
 */
 
 
-p1{
-
-  font-family:Georgia, 'Times New Roman', Times, serif;
- 
- -webkit-border-radius: 40px;
- -moz-border-radius: 40px;
- border-radius: 20px;
- background-image: linear-gradient(to top, rgb(0, 183, 255), blue);
- border: 3px solid #0055d4;
- color: #fff;
- display: block;
- float: left;
- height: 0.7vw;
- padding: 0.00001vw 0.00001vw 2vw 2vw;
-font-size:7vw 20vw 10vw 2vw;
- text-align: lett;
- position: relative;
- vertical-align: top;
- width:4vw ;
- text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
- 
-}
 
 #button2{
   visibility: hidden;
@@ -547,20 +525,6 @@ button{
   height: -webkit-fill-available;  
  
   height: fill-available;
-}
-
-p3{
-
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size:20px ;
-
- color: #fff;
- display: block;
- float: left;
- height: 20px;
- 
-
-
 }
 
 
@@ -850,12 +814,13 @@ button{
 p3{
 
   font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size:20px ;
+  font-size:1em ;
 
  color: #fff;
  display: block;
- float: left;
- height: 20px;
+ 
+ height:2vh;
+ width:110vw;
  
 
 
@@ -901,8 +866,25 @@ p3{
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   width:13vw;
   height:1vh;
+  
   }
 
+
+  p3{
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:1em ;
+  
+   color: #fff;
+   display: block;
+   
+   height:4vh;
+   width:90vw;
+   float:left;
+   
+  
+  
+  }
 
 }
 
