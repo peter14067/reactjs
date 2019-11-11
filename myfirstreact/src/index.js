@@ -6,6 +6,11 @@ import './index1.css';
  var html = document.querySelector('html'); var rem = html.offsetWidth / 6.4; html.style.fontSize = rem + "px";
 //import { TouchableOpacity } from 'react-native';
 
+const lightblue = 'lightblue';
+const white = 'white';
+const black = 'black';
+const red = 'red';
+const yellow = 'yellow';
 
  const myVar="";
 const blue='blue';
@@ -22,6 +27,40 @@ class Main extends React.Component{
     
     this.state={
       test:[{id:1}],
+      color:blue,
+      color:[{name:"yellow"},{name:"red"},{name:"blue"}],
+      color1:yellow,
+      color2:yellow,
+      color3:yellow,
+      color4:yellow,
+      color5:black,
+      color6:black,
+      color7:black,
+      color8:black,
+      color9:black,
+      color11:black,
+      color11:black,
+      color12:black,
+      color13:black,
+      color14:black,
+      color15:black,
+      color16:black,
+      color17:black,
+      color18:black,
+      color19:black,
+      color20:black,
+      color21:black,
+      color22:black,
+      color23:black,
+      color24:black,
+      color25:black,
+      color26:black,
+      color27:black,
+      color28:black,
+      color29:black,
+      color30:black,
+
+      
       data:[], 
       data2:[],
       data4:[],
@@ -50,6 +89,7 @@ class Main extends React.Component{
     this.Bet=this.Bet.bind(this);
     this.Reset=this.Reset.bind(this);
     this.Auto=this.Auto.bind(this);
+   
   }
 
 
@@ -91,6 +131,9 @@ this.setState({...this.state,data2:data1})
  
 
 }
+
+
+
 
   Reset=()=>
   {
@@ -159,27 +202,52 @@ this.setState({...this.state,data2:data1})
   {
  
     if(this.state.data2.length<6){
-     
-      let element=e.target.id
-  
+      let o=this.state
+    
+      
+      let c=this.state.color3
+      let d=this.state.color4
+      let r=this.state.color5
+
+
+      let element=e.target.value
+      let a=this.state.color[element-1].name
+      let name1=e.target.id;
+      
      
     
+      //{console.log(name1)}
       
     const data3=this.state.data2;
     
-   {console.log(data3)}
-   {console.log(element)}
+   
   
    if(data3.indexOf(element)===-1){
     
     data3.push(element);
    
+    this.setState({
+        a:black
+    })
+
+
   this.setState({...this.state,data2:data3})
              }else {
                {alert("你已經選擇過了")}
              }
   
+
+
+             console.log(a)
+            
+             console.log(c)
+             console.log(d)
+             console.log(r)
+
+
          }
+
+         
  
 }
 
@@ -521,32 +589,62 @@ onClick={(e)=>this.Select(e,this.state)}>{"14"}</button>
 
   render() {
 
-   
-
-  
-
   
     let arrLists = this.state.data8;
     let arrLists1 = this.state.data;
     let arrLists2=this.state.data4;
-
+    
     let arrLists3=this.state.data2;
+    
+   
 
         //在巡訪時將arrLists用<li>包起來回傳
         let lists = arrLists.map(function(list){return <p1>{list}</p1>})
         let lists1 = arrLists1.map(function(list){return <p1>{list}</p1>})
         let prizenumber = arrLists2.map(function(list){return <p2>{list}</p2>})
         let selectnumber = arrLists3.map(function(list){return <p1>{list}</p1>})
-      console.log(lists)
-  
+     
+      let v=""
       const arrButtons=[];
-      for(let i=1;i<=49;i++){
+      for(let i=1;i<=3;i++){
+                //id={"color"+i}
+        //arrButtons.push( <button  style={{fontSize:"40px",background:lightblue,color:this.state.colori} }
+        arrButtons.push(
+         
+        <button  style={{color:this.state.color[i-1].name}}
+        type="button"  value={i}
+        onClick={(e)=>this.Select(e,this.state) } >{i}</button>)
+       
+        /*
+
+
+        
         arrButtons.push( <p1><button style={{background:"transparent",border:"none",color:"white",textAlign:"center",padding:"0.005vh"}}
           type="button" button id={i} key={i}
           onClick={(e)=>this.Select(e,this.state)}>{i}</button></p1>)
+          */
       }
     let lotterynumber= arrButtons.map(function(list){return <div >{list}</div>})
 
+
+
+/*
+ <h3>上期開獎號碼</h3>
+        <h2 >{this.state.data.sort(function(a,b){return a-b}
+        )}({this.state.data10[0]})({this.state.data10[1]})({this.state.data10[2]})({this.state.data10[3]})({this.state.data10[4]})({this.state.data10[5]})</h2>
+        <h3>上期玩家所選號碼</h3>
+        <h2>
+        ({this.state.ltn[0]})({this.state.ltn[1]})({this.state.ltn[2]})({this.state.ltn[3]})({this.state.ltn[4]})({this.state.ltn[5]})
+        </h2>
+        <h3>上期中獎號碼</h3>
+        <h2>
+        ({this.state.ltwin[0]})({this.state.ltwin[1]})({this.state.ltwin[2]})({this.state.ltwin[3]})({this.state.ltwin[4]})({this.state.ltwin[5]})
+        </h2>
+        <h2 style={{color:blue}}>{this.state.cog1}</h2>
+        <h3>上期中獎金額</h3>
+        <h2>{this.state.ltb}</h2>
+        
+*/
 
 
 /*
@@ -629,8 +727,7 @@ const RenderButton=()=>{
       </div>
       </div>
      
-        <h1>玩家選號</h1>
-       
+        <h1>玩家選號</h1>       
         <p3> {this.state.data8.sort(function(a,b){return a-b}
         )}{lists}     </p3>
         <h1 >當期樂透號碼</h1>
@@ -691,21 +788,7 @@ const RenderButton=()=>{
         <br></br>
         <br></br>
         <br></br>
-        <h3>上期開獎號碼</h3>
-        <h2 >{this.state.data.sort(function(a,b){return a-b}
-        )}({this.state.data10[0]})({this.state.data10[1]})({this.state.data10[2]})({this.state.data10[3]})({this.state.data10[4]})({this.state.data10[5]})</h2>
-        <h3>上期玩家所選號碼</h3>
-        <h2>
-        ({this.state.ltn[0]})({this.state.ltn[1]})({this.state.ltn[2]})({this.state.ltn[3]})({this.state.ltn[4]})({this.state.ltn[5]})
-        </h2>
-        <h3>上期中獎號碼</h3>
-        <h2>
-        ({this.state.ltwin[0]})({this.state.ltwin[1]})({this.state.ltwin[2]})({this.state.ltwin[3]})({this.state.ltwin[4]})({this.state.ltwin[5]})
-        </h2>
-        <h2 style={{color:blue}}>{this.state.cog1}</h2>
-        <h3>上期中獎金額</h3>
-        <h2>{this.state.ltb}</h2>
-        
+       
         <button 
           id="button2"
           type="button" 

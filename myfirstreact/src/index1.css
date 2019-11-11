@@ -122,9 +122,10 @@
    -webkit-border-radius: 40px;
    -moz-border-radius: 40px;
    border-radius: 20px;
+   /*
    background-image: linear-gradient(to top, rgb(0, 183, 255), blue);
    border: 3px solid #0055d4;
-   
+   */
    display: block;
    float: left;
    height: 0.7vw;
@@ -168,7 +169,6 @@
   
   */
   
-  <BUTTON STYLE="background-color: transparent;" onClick="window.location='1.html'"><font color="#00ff00" size="2">
   
   
   
@@ -439,7 +439,6 @@ button{
 
 */
 
-<BUTTON STYLE="background-color: transparent;" onClick="window.location='1.html'"><font color="#00ff00" size="2">
 
 
 
@@ -670,26 +669,182 @@ p1{
 }
 */
 
-
 p1{
 
   font-family:Georgia, 'Times New Roman', Times, serif;
- 
+ font-size: 36px;
  -webkit-border-radius: 40px;
  -moz-border-radius: 40px;
- border-radius: 20px;
+ border-radius: 40px;
  background-image: linear-gradient(to top, rgb(0, 183, 255), blue);
  border: 3px solid #0055d4;
  color: #fff;
  display: block;
  float: left;
- height: 0.7vw;
- padding: 0.00001vw 0.00001vw 2vw 2vw;
-font-size:7vw 20vw 10vw 2vw;
- text-align: lett;
- position: relative;
+ height: 2vh;
+ padding: 1vh 0.2vw 3vh 0.2vw;
+ text-align: center;
  vertical-align: top;
- width:4vw;
+ width:10vw;
+ text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+
+
+p3{
+
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size:1em ;
+
+ color: #fff;
+ display: block;
+ 
+ height:2vh;
+ width:110vw;
+ 
+
+
+}
+
+button key#1{
+  color:yellow
+}
+key#1{
+  color:yellow
+}
+
+
+button#q1{
+  font-size: 5em;
+  color:blue;
+  float:left;
+  width:7vw
+}
+
+
+button#color1{
+  font-size: 5em;
+  color:blue;
+  float:left;
+  width:7vw
+}
+
+
+button#color2{
+  font-size: 5em;
+  color:yellow;
+  float:left
+}
+
+button#color3{
+  font-size: 5em;
+  color:green;
+  float:left
+}
+
+button#color4{
+  font-size: 5em;
+  color:red;
+  float:left
+}
+
+button#color5{
+  font-size: 5em;
+  color:purple;
+  float:left
+}
+
+button#q3{
+  font-size: 5em;
+  color:yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button.p1{
+
+
+  
+  font-family:Georgia, 'Times New Roman', Times, serif;
+ 
+ -webkit-border-radius: 40px;
+ -moz-border-radius: 40px;
+ border-radius: 1vh;
+ 
+/*
+ background-image: linear-gradient(to top, rgb(0, 183, 255), blue);
+ border: 3px solid #0055d4;
+*/
+ 
+ display: block;
+ float: left;
+ border:5px solid lightgrey;
+  
+
+ text-align:center;
+ display:block;
+ 
+ font-size:2em;
+ border-radius:50%;
+ width:5vw;
+ 
+ display:block;
+ 
+ position: relative;
+ 
+
  text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
  
 }
@@ -812,20 +967,6 @@ button{
   height: fill-available;
 }
 
-p3{
-
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size:1em ;
-
- color: #fff;
- display: block;
- 
- height:2vh;
- width:110vw;
- 
-
-
-}
 
 
 
