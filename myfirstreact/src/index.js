@@ -357,44 +357,10 @@ this.setState({...this.state,data4:arr,cog:"再接再厲吧",bonus:a,money:b,num
   this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"---------"+arr.length+"是頭獎"})
 }
 
-/*
-
-  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"-----"     +"再接再厲吧",bonus:a,money:b,num:[],hint:["開獎中"]})
-}else if(arr.length==1){
-  {console.log(arr.length)}
-  let a=0
-  let b=m-a;
-  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"-----"     +"再接再厲吧",bonus:a,money:b,num:[],hint:["開獎中"]})
-}else if(arr.length==2){
-  {console.log(arr.length)}
-  let a=0;
-  let b=m-a;
-  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"-----"      +"再接再厲吧",bonus:a,money:b,num:[],hint:["開獎中"]})
-}else if(arr.length==3){
-  let a=Math.floor(m*(1/10));
-  let b=m-a;
-  alert("恭喜中肆獎!");
-  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"-----"      +"是肆獎",bonus:a,money:b,num:[],hint:["開獎中"]})
-}else if(arr.length==4){
-  let a=Math.floor(m*(2/10));
-  let b=m-a;
-  alert("恭喜中參獎!");
-  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"是"+arr.length+"是參獎",bonus:a,money:b,num:[],hint:["開獎中"]})
-}else if(arr.length==5){
-  let a=Math.floor(m*(3/10));
-  let b=m-a;
-  alert("恭喜中貳獎!");
-  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"是"+arr.length+"是貳獎",bonus:a,money:b,num:[],hint:["開獎中"]})
-}else if(arr.length==6){
-  let a=Math.floor(m*(4/10));
-  let b=m-a;
-  alert("恭喜中頭獎!");
-  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼"+"---------"+arr.length+"是頭獎"})
-}
 
 
+this.Resetcolor()
 
-*/
 
 }
 
