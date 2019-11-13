@@ -1380,39 +1380,148 @@ button{
 
 
 
-@media only screen 
 
-and (min-device-width : 414px) 
+@media (min-width: 300px) {
 
-and (max-device-width : 736px) {
+  @for button#color$i from 1 through 36 { 
+     font-size:5px;
+  }
+
+  p4{
+    width:5vw;
+    height:5vh;
+  }
 
 
-
- button.auto{
+  button.auto{
     font-size: 1em;
-    width:61.5%;
+    width:56%;
     background-color:greenyellow ;
     position:absolute;
 
 
   }
 
+
+
+
+p3{
+   height:21vh;
+    width:80vw;
+
+}
+
+
+  p1{
+    font-size:1.5em ;
+    height:1.4vh;
+    width:9vw;
+  }
+
+.container1{
+  height:45vh;
+}
+
+
+
+button.color{
+  font-size: 1.8em;
+  
+  float:left;
+  text-align: center;
+  
+  height:6vh;
+  width:12.4vw;
+
+
+}
+
+  /*
+  button#color1{
+    font-size: 2em;
+    
+    float:left;
+    height:5.5vh;
+    width:12vw;
+   margin-right:0.5vw
+   
+  }
+
+*/
+
+
+}
+@media (min-width: 400px ) {
   
 
+p3{
+  height:20.8vh;
+    width:80vw;
+}
+
+
+
+  p1{
+    font-size:1.5em ;
+    height:1vh;
+    width:9vw;
+  }
+
+.container1{
+  height:45vh;
+}
+
+button.auto{
+  font-size: 1em;
+  width:58.8%;
+  background-color:greenyellow ;
+  position:absolute;
+
+
+}
+
+
+
+button.color{
+  font-size: 1.8em;
+  
+  float:left;
+  text-align: center;
+  
+  height:6vh;
+  width:12.7vw;
+
+
+}
+
+
+}
+  
+  
+@media (min-width: 560px ) {
+  
+  button.auto{
+    font-size: 1em;
+    width:60.3%;
+    background-color:greenyellow ;
+    position:absolute;
+
+
+  }
 
 
 
   p3{
-    height:35vh;
-      width:100%;
+    height:60vh;
+      width:80vw;
   }
   
   
   
     p1{
-      font-size:2em ;
-      height:3vh;
-      width:8vw;
+      font-size:1.5em ;
+      height:5vh;
+      width:9vw;
     }
   
   .container1{
@@ -1422,15 +1531,245 @@ and (max-device-width : 736px) {
   
   
   button.color{
-    font-size: 2em;
+    font-size: 1.8em;
     
     float:left;
     text-align: center;
     
     height:10vh;
-    width:13vw;
+    width:12.7vw;
+  
+  
+  }
   
   
   }
 
-}
+  @media (min-width: 639px ) {
+  
+
+    p3{
+      height:60vh;
+        width:80vw;
+    }
+    
+    
+    
+      p1{
+        font-size:1.5em ;
+        height:5vh;
+        width:9vw;
+      }
+    
+    .container1{
+      height:75vh;
+    }
+    
+    button.auto{
+      font-size: 1em;
+      width:61%;
+      background-color:greenyellow ;
+      position:absolute;
+
+
+    }
+    
+    button.color{
+      font-size: 2em;
+      
+      float:left;
+      text-align: center;
+      
+      height:10vh;
+      width:13.3vw;
+    
+    
+    }
+    
+    
+    }
+
+    @media (min-width: 730px ) {
+      button.auto{
+        font-size: 1em;
+        width:61.5%;
+        background-color:greenyellow ;
+        position:absolute;
+    
+    
+      }
+    
+
+      p3{
+        height:60vh;
+          width:80vw;
+      }
+      
+      
+      
+        p1{
+          font-size:1.5em ;
+          height:5vh;
+          width:9vw;
+        }
+      
+      .container1{
+        height:75vh;
+      }
+      
+      
+      
+      button.color{
+        font-size: 2em;
+        
+        float:left;
+        text-align: center;
+        
+        height:10vh;
+        width:13.3vw;
+      
+      
+      }
+      
+      
+      }
+
+      @media (min-width: 810px ) {
+        button.auto{
+          font-size: 1em;
+          width:61.5%;
+          background-color:greenyellow ;
+          position:absolute;
+      
+      
+        }
+      
+  
+        p3{
+          height:70vh;
+            width:80vw;
+        }
+        
+        
+        
+          p1{
+            font-size:2em ;
+            height:7vh;
+            width:8vw;
+          }
+        
+        .container1{
+          height:75vh;
+        }
+        
+        
+        
+        button.color{
+          font-size: 2em;
+          
+          float:left;
+          text-align: center;
+          
+          height:10vh;
+          width:13.3vw;
+        
+        
+        }
+        
+        
+        }
+
+
+        @media (min-width: 1020px ) {
+          button.auto{
+            font-size: 1em;
+            width:61.5%;
+            background-color:greenyellow ;
+            position:absolute;
+        
+        
+          }
+        
+    
+          p3{
+            height:45vh;
+              width:100%;
+          }
+          
+          
+          
+            p1{
+              font-size:2em ;
+              height:3vh;
+              width:8vw;
+            }
+          
+          .container1{
+            height:75vh;
+          }
+          
+          
+          
+          button.color{
+            font-size: 2em;
+            
+            float:left;
+            text-align: center;
+            
+            height:10vh;
+            width:13.7vw;
+          
+          
+          }
+          
+          
+          }
+
+          @media (min-width: 1130px ) {
+            button.auto{
+              font-size: 1em;
+              width:61.5%;
+              background-color:greenyellow ;
+              position:absolute;
+          
+          
+            }
+          
+            
+
+
+
+
+            p3{
+              height:45vh;
+                width:100%;
+            }
+            
+            
+            
+              p1{
+                font-size:2em ;
+                height:3vh;
+                width:8vw;
+              }
+            
+            .container1{
+              height:75vh;
+            }
+            
+            
+            
+            button.color{
+              font-size: 2em;
+              
+              float:left;
+              text-align: center;
+              
+              height:10vh;
+              width:13.7vw;
+            
+            
+            }
+            
+            
+            }
