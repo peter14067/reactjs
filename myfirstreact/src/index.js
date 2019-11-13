@@ -2,16 +2,17 @@
 import React, { Component }  from 'react';
 import ReactDOM from 'react-dom';
 import './index1.css';
+import './index.saas';
 
  var html = document.querySelector('html'); var rem = html.offsetWidth / 6.4; html.style.fontSize = rem + "px";
 //import { TouchableOpacity } from 'react-native';
 
 const lightblue = 'lightblue';
 const white = 'white';
-const black = 'black';
+const black = "black";
 const red = 'red';
 const yellow = 'yellow';
-
+const orange = 'orange';
  const myVar="";
 const blue='blue';
 let time = 40;//倒數7秒
@@ -28,39 +29,59 @@ class Main extends React.Component{
     this.state={
       test:[{id:1}],
       color:blue,
-      color:[{name:"yellow"},{name:"red"},{name:"blue"}],
-      color1:yellow,
-      color2:yellow,
-      color3:yellow,
-      color4:yellow,
-      color5:black,
-      color6:black,
-      color7:black,
-      color8:black,
-      color9:black,
-      color11:black,
-      color11:black,
-      color12:black,
-      color13:black,
-      color14:black,
-      color15:black,
-      color16:black,
-      color17:black,
-      color18:black,
-      color19:black,
-      color20:black,
-      color21:black,
-      color22:black,
-      color23:black,
-      color24:black,
-      color25:black,
-      color26:black,
-      color27:black,
-      color28:black,
-      color29:black,
-      color30:black,
+      //color:[{name:"yellow"},{name:"red"},{name:"blue"}],
+      color1:white,
+      color2:white,
+      color3:white,
+      color4:white,
+      color5:white,
+      color6:white,
+      color7:white,
+      color8:white,
+      color9:white,
+      color10:white,
+      color11:white,
+      color12:white,
+      color13:white,
+      color14:white,
+      color15:white,
+      color16:white,
+      color17:white,
+      color18:white,
+      color19:white,
+      color20:white,
+      color21:white,
+      color22:white,
+      color23:white,
+      color24:white,
+      color25:white,
+      color26:white,
+      color27:white,
+      color28:white,
+      color29:white,
+      color30:white,
+      color31:white,
+      color32:white,
+      color33:white,
+      color34:white,
+      color35:white,
+      color36:white,
+      color37:white,
+      color38:white,
+      color39:white,
+      color40:white,
+      color41:white,
+      color42:white,
+      color43:white,
+      color44:white,
+      color45:white,
+      color46:white,
+      color47:white,
+      color48:white,
+      color49:white,
 
-      
+
+
       data:[], 
       data2:[],
       data4:[],
@@ -109,7 +130,8 @@ class Main extends React.Component{
   
     const element= Math.floor((Math.random()*49)+1);
   
-    
+    let newObject={}   
+      newObject[`color${element}`]=orange.trim("")
   const data1=this.state.data2;
   
  //{console.log(data1)}
@@ -118,8 +140,8 @@ class Main extends React.Component{
  if(data1.indexOf(element)===-1){
   
   data1.push(element);
- 
-this.setState({...this.state,data2:data1})
+  this.setState(newObject)
+this.setState({data2:data1})
            }
 
        }
@@ -134,6 +156,18 @@ this.setState({...this.state,data2:data1})
 
 
 
+Resetcolor=()=>{
+for(let i=1;i<=49;i++){
+  let newObject={}   
+  newObject[`color${i}`]=white.trim("")
+   
+ this.setState(newObject)
+}
+}
+
+
+
+
 
   Reset=()=>
   {
@@ -142,10 +176,10 @@ this.setState({...this.state,data2:data1})
     const m=this.state.data2
   
  
- this.setState({...this.state,data2:[]})
- 
+
+ this.Resetcolor();
   
- 
+  this.setState({data2:[]})
 
 }
 
@@ -202,47 +236,43 @@ this.setState({...this.state,data2:data1})
   {
  
     if(this.state.data2.length<6){
-      let o=this.state
+    
     
       
-      let c=this.state.color3
-      let d=this.state.color4
-      let r=this.state.color5
-
+  
 
       let element=e.target.value
-      let a=this.state.color[element-1].name
-      let name1=e.target.id;
+      //let a=this.state[`color${element}`]
       
+     let newObject={}   
+      newObject[`color${element}`]=orange.trim("")
+     // {console.log(newObject[`color${element}`])}
      
     
-      //{console.log(name1)}
       
+      {console.log(newObject)}
     const data3=this.state.data2;
     
-   
-  
+   //let b='color${element}';
+
    if(data3.indexOf(element)===-1){
     
     data3.push(element);
    
-    this.setState({
-        a:black
-    })
+    this.setState(newObject)
+    this.setState({data2:data3})
 
-
-  this.setState({...this.state,data2:data3})
-             }else {
+  //this.setState({...this.state,data2:data3})
+             
+}else {
                {alert("你已經選擇過了")}
              }
   
 
 
-             console.log(a)
+           
             
-             console.log(c)
-             console.log(d)
-             console.log(r)
+            
 
 
          }
@@ -541,52 +571,6 @@ componentWillUnmount() {
 
 
 
-
-/*
-<button
-type="button" button id="2"
-onClick={(e)=>this.Select(e,this.state)}>{"2"}</button>
-<button
- type="button" button id="3"
-onClick={(e)=>this.Select(e,this.state)}>{"3"}</button>          
-<button
-type="button" button id="4"
-onClick={(e)=>this.Select(e,this.state)}>{"4"}</button>
-<button
-type="button" button id="5"
-onClick={(e)=>this.Select(e,this.state)}>{"5"}</button>
-<button
-type="button" button id="6"
-onClick={(e)=>this.Select(e,this.state)}>{"6"}</button>
-<button
-type="button" button id="7"
-onClick={(e)=>this.Select(e,this.state)}>{"7"}</button>  
-<button
-type="button" button id="8"
-onClick={(e)=>this.Select(e,this.state)}>{"8"}</button>  
-<button
-type="button" button id="9"
-onClick={(e)=>this.Select(e,this.state)}>{"9"}</button>     
-<button
-type="button" button id="10"
-onClick={(e)=>this.Select(e,this.state)}>{"10"}</button>      
-<button
-type="button" button id="11"
-onClick={(e)=>this.Select(e,this.state)}>{"11"}</button>      
-<button
-type="button" button id="12"
-onClick={(e)=>this.Select(e,this.state)}>{"12"}</button>           
-<button
-type="button" button id="13"
-onClick={(e)=>this.Select(e,this.state)}>{"13"}</button>            
-
-<button
-type="button" button id="14"
-onClick={(e)=>this.Select(e,this.state)}>{"14"}</button>            
-        
-*/
-
-
   render() {
 
   
@@ -595,7 +579,8 @@ onClick={(e)=>this.Select(e,this.state)}>{"14"}</button>
     let arrLists2=this.state.data4;
     
     let arrLists3=this.state.data2;
-    
+    {this.state.data8.sort(function(a,b){return a-b}
+    )}
    
 
         //在巡訪時將arrLists用<li>包起來回傳
@@ -606,13 +591,13 @@ onClick={(e)=>this.Select(e,this.state)}>{"14"}</button>
      
       let v=""
       const arrButtons=[];
-      for(let i=1;i<=3;i++){
+      for(let i=1;i<=49;i++){
                 //id={"color"+i}
         //arrButtons.push( <button  style={{fontSize:"40px",background:lightblue,color:this.state.colori} }
         arrButtons.push(
          
-        <button  style={{color:this.state.color[i-1].name}}
-        type="button"  value={i}
+        <button  style={{backgroundColor:this.state[`color${i}`]}}
+        type="button"  value={i} class={"color"}
         onClick={(e)=>this.Select(e,this.state) } >{i}</button>)
        
         /*
@@ -625,58 +610,6 @@ onClick={(e)=>this.Select(e,this.state)}>{"14"}</button>
           */
       }
     let lotterynumber= arrButtons.map(function(list){return <div >{list}</div>})
-
-
-
-/*
- <h3>上期開獎號碼</h3>
-        <h2 >{this.state.data.sort(function(a,b){return a-b}
-        )}({this.state.data10[0]})({this.state.data10[1]})({this.state.data10[2]})({this.state.data10[3]})({this.state.data10[4]})({this.state.data10[5]})</h2>
-        <h3>上期玩家所選號碼</h3>
-        <h2>
-        ({this.state.ltn[0]})({this.state.ltn[1]})({this.state.ltn[2]})({this.state.ltn[3]})({this.state.ltn[4]})({this.state.ltn[5]})
-        </h2>
-        <h3>上期中獎號碼</h3>
-        <h2>
-        ({this.state.ltwin[0]})({this.state.ltwin[1]})({this.state.ltwin[2]})({this.state.ltwin[3]})({this.state.ltwin[4]})({this.state.ltwin[5]})
-        </h2>
-        <h2 style={{color:blue}}>{this.state.cog1}</h2>
-        <h3>上期中獎金額</h3>
-        <h2>{this.state.ltb}</h2>
-        
-*/
-
-
-/*
-    
-    const style={
-
-      color:"blue",
-      
-     
-      
-    }
-*/
-
-
-
-    /*
-const RenderButton=()=>{
-  const arrButtons=[];
-    for(let i=1;i<=49;i++){
-      arrButtons.push( <button
-        type="button" button id={i} key={i}
-        onClick={(e)=>this.Select(e,this.state)}>{i}</button>)
-    }
-    return arrButtons;
-  }
-*/
-
-  
-
-
-
-
 
 
     return (
@@ -692,7 +625,7 @@ const RenderButton=()=>{
       </div>
       <div  style={{backgroundColor:"grey"}}>
       <div><h1 style={{backgroundColor:"orange"}}> {this.state.hint}</h1>
-      <p3 style={{height:"10vh"}}>{selectnumber}</p3>
+      <p3>{selectnumber}</p3>
       </div>
       <div class='container1' >{lotterynumber}      </div>
       
@@ -711,8 +644,8 @@ const RenderButton=()=>{
           type="button" onClick={this.Reset}
         >重新選擇</button>  
       
-      <button  style={{fontSize:"1em",width:"58%",backgroundColor:"greenyellow",position:"absolute"}}
-          type="button" onClick={this.Auto}
+      <button
+          type="button" onClick={this.Auto} class={"auto"}
         >自動選號</button>  
         
 
@@ -728,10 +661,9 @@ const RenderButton=()=>{
       </div>
      
         <h1>玩家選號</h1>       
-        <p3> {this.state.data8.sort(function(a,b){return a-b}
-        )}{lists}     </p3>
+        <p4>{lists}</p4>
         <h1 >當期樂透號碼</h1>
-        <p3>{lists1}</p3>        
+        <p4>{lists1}</p4>        
         
         <h1>中獎號碼</h1>
         <div>{prizenumber}</div>
