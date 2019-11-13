@@ -1455,7 +1455,7 @@ button.color{
   
 
 p3{
-  height:20.8vh;
+  height:25vh;
     width:80vw;
 }
 
@@ -1485,11 +1485,11 @@ button.auto{
 button.color{
   font-size: 1.8em;
   
-  float:left;
+ 
   text-align: center;
   
   height:6vh;
-  width:12.7vw;
+  width:12.9vw;
 
 
 }
