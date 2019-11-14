@@ -204,8 +204,11 @@ for(let i=1;i<=49;i++){
    
     if(time<40){
  if(b.length==6){
+
  alert("下注成功")
+ 
  this.setState({...this.state,num:b,money:a,data8:b,data2:[],hint:["成功選擇號碼,等待開獎中"]})
+ this.Resetcolor()
  }else{
    alert("請選擇剩下號碼")
  }
