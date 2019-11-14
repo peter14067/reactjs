@@ -591,7 +591,7 @@ componentWillUnmount() {
       </div>
       <div  style={{backgroundColor:"grey"}}>
       <div><h1 style={{backgroundColor:"orange"}}> {this.state.hint}</h1>
-      <p3>{selectnumber}</p3>
+      <div class="p3">{selectnumber}</div>
       </div>
       <div class='container1' >{lotterynumber}      </div>
       

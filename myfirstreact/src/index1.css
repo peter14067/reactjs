@@ -87,18 +87,6 @@
   }
   
   
-  /*
-  p1{
-    background: blueviolet;
-    color:white;
-    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
-    border-radius:50%;
-    
-    font-size: 30px;
-    padding:15px;
-  }
-  
-  */
   p2{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 36px;
@@ -138,7 +126,6 @@
    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
   }
   */
-  
   
   p1{
   
@@ -277,7 +264,7 @@
     height: fill-available;
   }
   
-  p3{
+  div.p3{
   
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size:20px ;
@@ -731,7 +718,7 @@ p1{
 }
 
 
-p3{
+div.p3{
 
   font-family:Georgia, 'Times New Roman', Times, serif;
   font-size:1em ;
@@ -1405,7 +1392,7 @@ button{
 
 
 
-p3{
+div.p3{
    height:21vh;
     width:80vw;
 
@@ -1454,7 +1441,7 @@ button.color{
 @media (min-width: 400px ) {
   
 
-p3{
+div.p3{
   height:20.8vh;
     width:80vw;
 }
@@ -1511,7 +1498,7 @@ button.color{
 
 
 
-  p3{
+  div.p3{
     height:60vh;
       width:80vw;
   }
@@ -1548,7 +1535,7 @@ button.color{
   @media (min-width: 639px ) {
   
 
-    p3{
+    div.p3{
       height:60vh;
         width:80vw;
     }
@@ -1600,7 +1587,7 @@ button.color{
       }
     
 
-      p3{
+      div.p3{
         height:60vh;
           width:80vw;
       }
@@ -1645,7 +1632,7 @@ button.color{
         }
       
   
-        p3{
+        div.p3{
           height:70vh;
             width:80vw;
         }
@@ -1691,7 +1678,7 @@ button.color{
           }
         
     
-          p3{
+          div.p3{
             height:45vh;
               width:100%;
           }
