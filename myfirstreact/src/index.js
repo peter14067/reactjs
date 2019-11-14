@@ -7,8 +7,8 @@ import './index.saas';
  var html = document.querySelector('html'); var rem = html.offsetWidth / 6.4; html.style.fontSize = rem + "px";
 //import { TouchableOpacity } from 'react-native';
 
-const lightblue = 'lightblue';
-const white = 'white';
+const precolor = 'white';
+
 const black = "black";
 const red = 'red';
 const yellow = 'yellow';
@@ -30,55 +30,55 @@ class Main extends React.Component{
       test:[{id:1}],
       color:blue,
       //color:[{name:"yellow"},{name:"red"},{name:"blue"}],
-      color1:white,
-      color2:white,
-      color3:white,
-      color4:white,
-      color5:white,
-      color6:white,
-      color7:white,
-      color8:white,
-      color9:white,
-      color10:white,
-      color11:white,
-      color12:white,
-      color13:white,
-      color14:white,
-      color15:white,
-      color16:white,
-      color17:white,
-      color18:white,
-      color19:white,
-      color20:white,
-      color21:white,
-      color22:white,
-      color23:white,
-      color24:white,
-      color25:white,
-      color26:white,
-      color27:white,
-      color28:white,
-      color29:white,
-      color30:white,
-      color31:white,
-      color32:white,
-      color33:white,
-      color34:white,
-      color35:white,
-      color36:white,
-      color37:white,
-      color38:white,
-      color39:white,
-      color40:white,
-      color41:white,
-      color42:white,
-      color43:white,
-      color44:white,
-      color45:white,
-      color46:white,
-      color47:white,
-      color48:white,
-      color49:white,
+      color1:precolor,
+      color2:precolor,
+      color3:precolor,
+      color4:precolor,
+      color5:precolor,
+      color6:precolor,
+      color7:precolor,
+      color8:precolor,
+      color9:precolor,
+      color10:precolor,
+      color11:precolor,
+      color12:precolor,
+      color13:precolor,
+      color14:precolor,
+      color15:precolor,
+      color16:precolor,
+      color17:precolor,
+      color18:precolor,
+      color19:precolor,
+      color20:precolor,
+      color21:precolor,
+      color22:precolor,
+      color23:precolor,
+      color24:precolor,
+      color25:precolor,
+      color26:precolor,
+      color27:precolor,
+      color28:precolor,
+      color29:precolor,
+      color30:precolor,
+      color31:precolor,
+      color32:precolor,
+      color33:precolor,
+      color34:precolor,
+      color35:precolor,
+      color36:precolor,
+      color37:precolor,
+      color38:precolor,
+      color39:precolor,
+      color40:precolor,
+      color41:precolor,
+      color42:precolor,
+      color43:precolor,
+      color44:precolor,
+      color45:precolor,
+      color46:precolor,
+      color47:precolor,
+      color48:precolor,
+      color49:precolor,
 
 
 
@@ -159,7 +159,7 @@ this.setState({data2:data1})
 Resetcolor=()=>{
 for(let i=1;i<=49;i++){
   let newObject={}   
-  newObject[`color${i}`]=white.trim("")
+  newObject[`color${i}`]=precolor.trim("")
    
  this.setState(newObject)
 }
@@ -592,8 +592,8 @@ componentWillUnmount() {
       <h1 >下次開獎倒數  {this.state.time}  秒    累積獎金 $ {this.state.money}  </h1>  
     
       </div>
-      <div  style={{backgroundColor:"grey"}}>
-      <div><h1 style={{backgroundColor:"orange"}}> {this.state.hint}</h1>
+      <div  style={{backgroundColor:"lightgrey",width:"100%"}}>
+      <div><h1 style={{backgroundColor:"grey"}}> {this.state.hint}</h1>
       <div class="p3">{selectnumber}</div>
       </div>
       <div class='container1' >{lotterynumber}      </div>
@@ -606,7 +606,7 @@ componentWillUnmount() {
       
      <div >
      
-     <div style={{backgroundColor:"pink",display:"block"}}>
+     <div style={{backgroundColor:"lightgrey",display:"block"}}>
       
      <div class="flex-column1">
       <button style={{fontSize:"1em",width:"30%",marginLeft:"0",marginRight:"3%",backgroundColor:"greenyellow",position:"relative"}}
@@ -614,7 +614,7 @@ componentWillUnmount() {
         >重新選擇</button>  
       
       <button
-          type="button" onClick={this.Auto} class={"auto"}
+          type="button" onClick={this.Auto} class={"auto2"}
         >自動選號</button>  
         
 
