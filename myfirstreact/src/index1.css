@@ -1914,72 +1914,7 @@ button.color{
             }
 
 
-            @media only screen 
-
-and (min-device-width : 414px) 
-
-and (max-device-width : 736px) 
-
-and (orientation : portrait) {
-  
-  body{
-    margin:0px;
-  }
-
-  
-  h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2vw;
-    text-shadow: 0.1em 0.1em 0.2em black;
-    float: left;
-    display: block;
-    width:100%;
-    color:white
-    }
-
-  div.p3{
-    height:25vh;
-      width:100%;
-  }
-
-
-  
-  button.auto2{
-    font-size: 1em;
-    height:3.5vh;
-    width:56%;
-    background-color:greenyellow ;
-    position:absolute;
-
-
-  }
-
-
-  button.auto3{
-    background-color: greenyellow;
-    font-size:1em;
-    width:98%;
-  
-    margin-top:3vh;
-
-  }
-
-  button.color{
-    font-size: 1.7em;
-    
-    float:left;
-    text-align: center;
-    
-    height:6vh;
-    width:12.9vw;
-  
-  
-  }
-
-
-
-}
-
+            
 
 
    @media (min-width: 1130px ) {
