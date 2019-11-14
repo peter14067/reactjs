@@ -13,9 +13,6 @@
 
 
 
-
-
-
 @media (minwidth: 1199.98px) { 
 
 
@@ -36,7 +33,9 @@
 
   body {
     font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
+    height:100%;
+    width:100%;
+   
     
   }
   /*
@@ -343,9 +342,11 @@ h2{
 /* phones */
 @media (min-width: 767.98px) {
    body {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
-  
+
+  height:100%;
+  width:100%;
+  margin: 0px;
+	padding: 0px;
 }
 /*
 h1{
@@ -1907,6 +1908,19 @@ and (orientation : portrait) {
 
   }
 
+  button.color{
+    font-size: 1.7em;
+    
+    float:left;
+    text-align: center;
+    
+    height:6vh;
+    width:12.9vw;
+  
+  
+  }
+
+
 
 }
 
@@ -1940,7 +1954,7 @@ and (orientation : portrait) {
 
 
   p3{
-    height:45vh;
+    height:60vh;
       width:100%;
   }
   
@@ -2067,6 +2081,11 @@ and (orientation : portrait) {
   }
   
   @media (min-width: 1680px ) {
+
+body{
+  margin:0px;
+}
+
     h2{
       font-family: Georgia, 'Times New Roman', Times, serif;
       font-size: 2vw;
@@ -2095,7 +2114,7 @@ and (orientation : portrait) {
 
   div.p3{
     height:30vh;
-      width:100%;
+     
       margin:0px 0px ;
       background-color: lightgrey;
   }
@@ -2145,6 +2164,7 @@ and (orientation : portrait) {
     float: left;
     display: block;
     width:100%;
+    
     }
 
 

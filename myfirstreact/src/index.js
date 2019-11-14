@@ -581,13 +581,11 @@ componentWillUnmount() {
     let lotterynumber= arrButtons.map(function(list){return <div >{list}</div>})
 
 
-    return (
-
-  
+    return ( 
 
       
       <div>
-      <div></div>
+      
       <div style={{display:"block"}}>
       <h1 >下次開獎倒數  {this.state.time}  秒    累積獎金 $ {this.state.money}  </h1>  
     
