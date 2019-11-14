@@ -1667,7 +1667,7 @@ button.color{
       
       button.auto2{
         font-size: 1em;
-        height:2.4vh;
+        height:5.8vh;
         width:61.5%;
         background-color:greenyellow ;
         position:absolute;
@@ -1903,12 +1903,24 @@ and (orientation : portrait) {
   }
 
 
+  
   button.auto2{
     font-size: 1em;
-    width:58.7%;
+    height:3.5vh;
+    width:56%;
     background-color:greenyellow ;
     position:absolute;
 
+
+  }
+
+
+  button.auto3{
+    background-color: greenyellow;
+    font-size:1em;
+    width:98%;
+  
+    margin-top:3vh;
 
   }
 
