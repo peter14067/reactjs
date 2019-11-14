@@ -15,7 +15,9 @@
 
 @media (minwidth: 1199.98px) { 
 
-
+  body{
+    margin:0px;
+  }
   h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2vw;
@@ -315,6 +317,11 @@
 
 
  @media (min-width: 1023px) {
+
+
+  body{
+    margin:0px;
+  }
  button#color1{
   font-size: 20em;
   
@@ -1402,6 +1409,11 @@ button.auto3{
 
 
 @media (min-width: 300px) {
+  
+  body{
+    margin:0px;
+  }
+  
   h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2vw;
@@ -1482,6 +1494,11 @@ button.color{
 
 }
 @media (min-width: 400px ) {
+
+  body{
+    margin:0px;
+  }
+
   h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2vw;
@@ -1537,7 +1554,9 @@ button.color{
   
   
 @media (min-width: 560px ) {
-  
+  body{
+    margin:0px;
+  }
   h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2vw;
@@ -1595,7 +1614,9 @@ button.color{
   }
 
   @media (min-width: 639px ) {
-  
+    body{
+      margin:0px;
+    }
 
     h2{
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -1651,6 +1672,10 @@ button.color{
     }
 
     @media (min-width: 730px ) {
+
+      body{
+        margin:0px;
+      }
       h2{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 2vw;
@@ -1711,6 +1736,10 @@ button.color{
       }
 
       @media (min-width: 810px ) {
+        body{
+          margin:0px;
+        }
+
         h2{
           font-family: Georgia, 'Times New Roman', Times, serif;
           font-size: 2vw;
@@ -1771,7 +1800,9 @@ button.color{
 
 
         @media (min-width: 1020px ) {
-          
+          body{
+  margin:0px;
+}
           h2{
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-size: 2vw;
@@ -1830,6 +1861,10 @@ button.color{
           }
 
           @media (min-width: 1130px ) {
+
+            body{
+              margin:0px;
+            }
             button.auto2{
               font-size: 1em;
               width:61.5%;
@@ -1885,7 +1920,12 @@ and (min-device-width : 414px)
 
 and (max-device-width : 736px) 
 
-and (orientation : portrait) { 
+and (orientation : portrait) {
+  
+  body{
+    margin:0px;
+  }
+
   
   h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -1943,6 +1983,10 @@ and (orientation : portrait) {
 
 
    @media (min-width: 1130px ) {
+
+    body{
+      margin:0px;
+    }
   
     h2{
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -2008,6 +2052,10 @@ and (orientation : portrait) {
 
    
    @media (min-width: 1300px ) {
+
+    body{
+      margin:0px;
+    }
   
     h2{
       font-family: Georgia, 'Times New Roman', Times, serif;
