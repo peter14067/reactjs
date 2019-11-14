@@ -1771,6 +1771,19 @@ and (max-device-width : 736px)
 and (orientation : portrait) { 
   
 
+  button.color{
+    font-size: 2em;
+    
+    float:left;
+    text-align: center;
+    color:blueviolet;
+    height:10vh;
+    width:13.7vw;
+  
+  
+  }
+
+
 
   div.p3{
     height:25vh;
@@ -1778,6 +1791,9 @@ and (orientation : portrait) {
   }
 
 
+
+
+  
   button.auto2{
     font-size: 1em;
     width:58.7%;
@@ -1786,6 +1802,18 @@ and (orientation : portrait) {
 
 
   }
+
+
+  
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    float: left;
+    display: block;
+    width:100%;
+    color:white;
+    }
 
 
 }
@@ -1971,6 +1999,16 @@ and (orientation : portrait) {
   
   }
   
+
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    float: left;
+    display: block;
+    width:100%;
+    color:white;
+    }
 
   h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
