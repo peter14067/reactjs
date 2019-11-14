@@ -19,7 +19,15 @@
 @media (minwidth: 1199.98px) { 
 
 
-
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    float: left;
+    display: block;
+    width:100%;
+    color:white
+    }
  
 
 
@@ -318,6 +326,17 @@
  
 }
 
+h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2vw;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  float: left;
+  display: block;
+  width:100%;
+  color:white
+  }
+
+
  }
 
 
@@ -578,7 +597,20 @@ button{
   -webkit-flex: none;
           flex: none;
   width: 50px;
-} }
+}
+
+h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2vw;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  float: left;
+  display: block;
+  width:100%;
+  color:white
+  }
+
+
+}
 
 
 
@@ -1369,6 +1401,17 @@ button{
 
 
 @media (min-width: 300px) {
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    float: left;
+    display: block;
+    width:100%;
+    color:white
+    }
+
+
 
   @for button#color$i from 1 through 36 { 
      font-size:5px;
@@ -1439,7 +1482,15 @@ button.color{
 
 }
 @media (min-width: 400px ) {
-  
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    float: left;
+    display: block;
+    width:100%;
+    color:white
+    }
 
 div.p3{
   height:20.8vh;
@@ -1487,6 +1538,16 @@ button.color{
   
 @media (min-width: 560px ) {
   
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    float: left;
+    display: block;
+    width:100%;
+    color:white
+    }
+
   button.auto2{
     font-size: 1em;
     width:60.3%;
@@ -1535,6 +1596,17 @@ button.color{
   @media (min-width: 639px ) {
   
 
+    h2{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 2vw;
+      text-shadow: 0.1em 0.1em 0.2em black;
+      float: left;
+      display: block;
+      width:100%;
+      color:white
+      }
+
+
     div.p3{
       height:60vh;
         width:80vw;
@@ -1577,6 +1649,20 @@ button.color{
     }
 
     @media (min-width: 730px ) {
+      h2{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2vw;
+        text-shadow: 0.1em 0.1em 0.2em black;
+        float: left;
+        display: block;
+        width:100%;
+        color:white
+        }
+      
+      
+      
+      
+      
       button.auto2{
         font-size: 1em;
         width:61.5%;
@@ -1622,6 +1708,19 @@ button.color{
       }
 
       @media (min-width: 810px ) {
+        h2{
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-size: 2vw;
+          text-shadow: 0.1em 0.1em 0.2em black;
+          float: left;
+          display: block;
+          width:100%;
+          color:white
+          }
+        
+        
+        
+        
         button.auto2{
           font-size: 1em;
           width:61.5%;
@@ -1668,6 +1767,19 @@ button.color{
 
 
         @media (min-width: 1020px ) {
+          
+          h2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2vw;
+            text-shadow: 0.1em 0.1em 0.2em black;
+            float: left;
+            display: block;
+            width:100%;
+            color:white
+            }
+          
+          
+          
           button.auto2{
             font-size: 1em;
             width:61.5%;
@@ -1770,20 +1882,15 @@ and (max-device-width : 736px)
 
 and (orientation : portrait) { 
   
-
-  button.color{
-    font-size: 2em;
-    
-    float:left;
-    text-align: center;
-    color:blueviolet;
-    height:10vh;
-    width:13.7vw;
-  
-  
-  }
-
-
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    float: left;
+    display: block;
+    width:100%;
+    color:white
+    }
 
   div.p3{
     height:25vh;
@@ -1791,9 +1898,6 @@ and (orientation : portrait) {
   }
 
 
-
-
-  
   button.auto2{
     font-size: 1em;
     width:58.7%;
@@ -1804,24 +1908,24 @@ and (orientation : portrait) {
   }
 
 
-  
-  h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2vw;
-    text-shadow: 0.1em 0.1em 0.2em black;
-    float: left;
-    display: block;
-    width:100%;
-    color:white;
-    }
-
-
 }
 
 
 
    @media (min-width: 1130px ) {
-  button.auto2{
+  
+    h2{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 2vw;
+      text-shadow: 0.1em 0.1em 0.2em black;
+      float: left;
+      display: block;
+      width:100%;
+      color:white
+      }
+  
+  
+    button.auto2{
     font-size: 1em;
     width:61.5%;
     background-color:greenyellow ;
@@ -1874,7 +1978,19 @@ and (orientation : portrait) {
 
    
    @media (min-width: 1300px ) {
-  button.auto2{
+  
+    h2{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 2vw;
+      text-shadow: 0.1em 0.1em 0.2em black;
+      float: left;
+      display: block;
+      width:100%;
+      color:white
+      }
+  
+  
+    button.auto2{
     font-size: 1em;
     width:63%;
     background-color:greenyellow ;
@@ -1951,7 +2067,19 @@ and (orientation : portrait) {
   }
   
   @media (min-width: 1680px ) {
-  button.auto2{
+    h2{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 2vw;
+      text-shadow: 0.1em 0.1em 0.2em black;
+      float: left;
+      display: block;
+      width:100%;
+      color:white
+      }
+  
+  
+  
+    button.auto2{
     font-size: 1em;
     width:61.5%;
     background-color:greenyellow ;
@@ -2007,7 +2135,7 @@ and (orientation : portrait) {
     float: left;
     display: block;
     width:100%;
-    color:white;
+    color:white
     }
 
   h1{
