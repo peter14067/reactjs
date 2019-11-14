@@ -582,14 +582,11 @@ componentWillUnmount() {
 
 
     return ( 
-
-      
-      <div>
-      
+     
+      <div style={{backgroundColor:"lightgrey"}}>      
       <div style={{display:"block"}}>
       <h1 >下次開獎倒數  {this.state.time}  秒    累積獎金 $ {this.state.money}  </h1>  
-    
-      </div>
+          </div>
       <div  style={{backgroundColor:"lightgrey",width:"100%"}}>
       <div><h2 style={{backgroundColor:"grey"}}> {this.state.hint}</h2>
       <div class="p3">{selectnumber}</div>
@@ -616,9 +613,9 @@ componentWillUnmount() {
         >自動選號</button>  
         
 
-<button  class="sure"   
+<button  class={"auto3"}
   
-          type="button" onClick={this.Bet}
+          type="button" onClick={this.Bet} 
         >確定</button>  
         
        
@@ -626,7 +623,7 @@ componentWillUnmount() {
       </div>
       </div>
       </div>
-     
+      <div >
         <h1>玩家選號</h1>       
         <p4>{lists}</p4>
         <h1 >當期樂透號碼</h1>
@@ -639,7 +636,7 @@ componentWillUnmount() {
         <div class='bonus1'>{this.state.cog}</div>
         <h1>中獎金額</h1>
         <div class='bonus1'>{this.state.bonus}</div>
-
+        </div>  
 
         
 

@@ -1387,10 +1387,10 @@ button{
   width: 50px;
 }
 
-.sure{
+button.auto3{
   background-color: greenyellow;
-  font-size:1em;
-  width:98%;
+  font-size:2em;
+  width:97.8%;
 
   margin-top:1vh;
 }
@@ -1426,10 +1426,21 @@ button{
 
   button.auto2{
     font-size: 1em;
+    height:3.5vh;
     width:56%;
     background-color:greenyellow ;
     position:absolute;
 
+
+  }
+
+
+  button.auto3{
+    background-color: greenyellow;
+    font-size:1em;
+    width:98%;
+  
+    margin-top:3vh;
 
   }
 
@@ -1467,18 +1478,6 @@ button.color{
 
 }
 
-  /*
-  button#color1{
-    font-size: 2em;
-    
-    float:left;
-    height:5.5vh;
-    width:12vw;
-   margin-right:0.5vw
-   
-  }
-
-*/
 
 
 }
@@ -1550,11 +1549,12 @@ button.color{
     }
 
   button.auto2{
-    font-size: 1em;
+    font-size: 1.2em;
     width:60.3%;
+    height:3vh;
     background-color:greenyellow ;
     position:absolute;
-
+   
 
   }
 
@@ -1627,6 +1627,7 @@ button.color{
     
     button.auto2{
       font-size: 1em;
+      height:5.7vh;
       width:61%;
       background-color:greenyellow ;
       position:absolute;
@@ -1666,6 +1667,7 @@ button.color{
       
       button.auto2{
         font-size: 1em;
+        height:2.4vh;
         width:61.5%;
         background-color:greenyellow ;
         position:absolute;
@@ -1724,7 +1726,8 @@ button.color{
         
         button.auto2{
           font-size: 1em;
-          width:61.5%;
+          width:65%;
+          height:6vh;
           background-color:greenyellow ;
           position:absolute;
       
@@ -1783,6 +1786,7 @@ button.color{
           
           button.auto2{
             font-size: 1em;
+            height:1.8vh;
             width:61.5%;
             background-color:greenyellow ;
             position:absolute;
@@ -2097,15 +2101,30 @@ body{
       }
   
   
+
+
+
+
+  
   
     button.auto2{
-    font-size: 1em;
-    width:61.5%;
+    font-size: 1.5em;
+    width:65%;
     background-color:greenyellow ;
     position:absolute;
 
 
   }
+
+
+      
+button.auto3{
+  background-color: greenyellow;
+  font-size:2em;
+  width:98%;
+
+  margin-top:3vh;
+}
 
   
 
