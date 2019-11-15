@@ -632,7 +632,7 @@ componentWillUnmount() {
         
         <h1>中獎號碼</h1>
 
-        <div>{prizenumber}</div>
+        <div style={{float:"left"}}>{prizenumber}</div>
 
         
         <h1 style={{display:"block"}}>中獎金額</h1>
