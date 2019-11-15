@@ -620,12 +620,12 @@ componentWillUnmount() {
       </div>
       </div>
       </div>
-      
+      <div style={{backgroundColor:"lightgrey"}}>
         <h1>玩家選號</h1>       
         <p4>{lists}</p4>
         <h1 >當期樂透號碼</h1>
         <p4>{lists1}</p4>        
-        
+        </div>
         <h1>中獎號碼</h1>
         <div>{prizenumber}</div>
 
