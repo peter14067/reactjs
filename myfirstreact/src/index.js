@@ -623,7 +623,7 @@ componentWillUnmount() {
       </div>
       </div>
       </div>
-      <div style={{backgroundColor:"lightgrey"}}>
+      
         <h1>玩家選號</h1>       
         <p4>{lists}</p4>
         <h1 >當期樂透號碼</h1>
@@ -636,7 +636,7 @@ componentWillUnmount() {
         <div class='bonus1'>{this.state.cog}</div>
         <h1>中獎金額</h1>
         <div class='bonus1'>{this.state.bonus}</div>
-        </div>  
+         
 
         
 
