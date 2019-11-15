@@ -585,7 +585,7 @@ componentWillUnmount() {
      
       <div style={{backgroundColor:"lightgrey"}}>      
       <div style={{display:"block"}}>
-      <h1 >下次開獎倒數  {this.state.time}  秒    累積獎金 $ {this.state.money}  </h1>  
+      <div class="h1">下次開獎倒數  {this.state.time}  秒    累積獎金 $ {this.state.money}  </div>  
           </div>
       <div  style={{backgroundColor:"lightgrey",width:"100%"}}>
       <div><h2 style={{backgroundColor:"grey"}}> {this.state.hint}</h2>
@@ -630,9 +630,7 @@ componentWillUnmount() {
         <p4>{lists1}</p4>        
         
         <h1>中獎號碼</h1>
-        <div>{prizenumber}</div>
-
-        
+        <div>{prizenumber}</div>        
         <div class='bonus1'>{this.state.cog}</div>
         <h1>中獎金額</h1>
         <div class='bonus1'>{this.state.bonus}</div>

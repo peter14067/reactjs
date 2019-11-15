@@ -41,7 +41,7 @@
     
   }
   /*
-  h1{
+  div.h1{
     background-image: url(./demo.png);
     
     width: 400px; 
@@ -85,8 +85,21 @@
    font-size: 20px;
   }
   
-  
   h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5vw;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    float: left;
+    display: block;
+    width:100%;
+    }
+
+
+
+
+
+
+  div.h1{
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 5vw;
   text-shadow: 0.1em 0.1em 0.2em black;
@@ -399,9 +412,18 @@ h3{
 .b{
  font-size: 20px;
 }
-
-
 h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 5vw;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  float: left;
+  display: block;
+  width:100%;
+  }
+  
+  
+
+div.h1{
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: 5vw;
 text-shadow: 0.1em 0.1em 0.2em black;
@@ -673,9 +695,16 @@ h3{
 .b{
  font-size: 20px;
 }
-
-
 h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 5vw;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  float: left;
+  display: block;
+  width:100%;
+  }
+
+div.h1{
 font-family: Georgia, 'Times New Roman', Times, serif;
 font-size: 5vw;
 text-shadow: 0.1em 0.1em 0.2em black;
@@ -2054,9 +2083,16 @@ button.color{
   
   
   }
-  
-
   h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    float: left;
+    display: block;
+    width:100%;
+    }
+
+  div.h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2vw;
     text-shadow: 0.1em 0.1em 0.2em black;
@@ -2177,7 +2213,21 @@ button.auto3{
     color:white
     }
 
-  h1{
+
+    h1{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 2vw;
+      text-shadow: 0.1em 0.1em 0.2em black;
+      float: left;
+      display: block;
+      width:100%;
+      
+      }
+
+
+
+
+  div.h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2vw;
     text-shadow: 0.1em 0.1em 0.2em black;
