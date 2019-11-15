@@ -327,17 +327,17 @@ let b=m-a;
   
   });
  */
-this.setState({...this.state,data4:arr,cog:"再接再厲吧",bonus:a,money:b,num:[],hint:["開獎中"]})
+this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼",bonus:a,money:b,num:[],hint:["開獎中"]})
 }else if(arr.length==1){
   {console.log(arr.length)}
   let a=0
   let b=m-a;
-  this.setState({...this.state,data4:arr,cog:"再接再厲吧",bonus:a,money:b,num:[],hint:["開獎中"]})
+  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼",bonus:a,money:b,num:[],hint:["開獎中"]})
 }else if(arr.length==2){
   {console.log(arr.length)}
   let a=0;
   let b=m-a;
-  this.setState({...this.state,data4:arr,cog:"再接再厲吧",bonus:a,money:b,num:[],hint:["開獎中"]})
+  this.setState({...this.state,data4:arr,cog:"你對中"+arr.length+"個號碼",bonus:a,money:b,num:[],hint:["開獎中"]})
 }else if(arr.length==3){
   let a=Math.floor(m*(1/10));
   let b=m-a;
@@ -626,11 +626,15 @@ componentWillUnmount() {
         <h1 >當期樂透號碼</h1>
         <p4>{lists1}</p4>        
         </div>
+
+        <h1>中獎結果</h1>
+        <h2 style={{color:blue}}>{this.state.cog}</h2>
+
         <h1>中獎號碼</h1>
+
         <div>{prizenumber}</div>
 
         
-        <div class='bonus1'>{this.state.cog}</div>
         <h1>中獎金額</h1>
         <div class='bonus1'>{this.state.bonus}</div>
          
