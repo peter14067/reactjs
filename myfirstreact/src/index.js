@@ -636,7 +636,7 @@ componentWillUnmount() {
 
         
         <h1>中獎金額</h1>
-        <div class="bonus1">{this.state.bonus}</div>
+        <div>{this.state.bonus}</div>
          
         <br></br>
         <br></br>
