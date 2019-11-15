@@ -2320,7 +2320,7 @@ button.color{
 }
 
 
-@media (device-height:736px) and (orientation : landscape){
+@media (device-width:736px) and (orientation : landscape){
   /* 兼容iphone6 Plus ，plus的样式写在此处*/
 
   html{
@@ -2358,7 +2358,7 @@ div.p3{
   }
 
 .container1{
-  height:80vh;
+  height:60vh;
   
 }
 
@@ -2379,7 +2379,7 @@ button.color{
   float:left;
   text-align: center;
   
-  height:6vh;
+  height:8vh;
   width:12.7vw;
 
 
