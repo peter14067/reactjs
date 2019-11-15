@@ -3,7 +3,7 @@
 
 html{
   background-color: lightgrey;
-  height:250vh;
+  height:220vh;
 }
 
 
@@ -2313,6 +2313,77 @@ button.color{
 
 }
 
+
+
+
+
+}
+
+
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){
+  /* 兼容iphone6 Plus ，plus的样式写在此处*/
+
+  html{
+    height: 220vh;
+  }
+
+
+
+  body{
+    margin:0px;
+    
+  }
+
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    float: left;
+    display: block;
+    width:100%;
+    color:white
+    }
+
+div.p3{
+  height:20.8vh;
+    width:80vw;
+}
+
+
+
+  p1{
+    font-size:1.5em ;
+    height:1vh;
+    width:9vw;
+  }
+
+.container1{
+  height:45vh;
+  
+}
+
+button.auto{
+  font-size: 1em;
+  width:58.8%;
+  background-color:greenyellow ;
+  position:absolute;
+
+
+}
+
+
+
+button.color{
+  font-size: 1.8em;
+  
+  float:left;
+  text-align: center;
+  
+  height:6vh;
+  width:12.7vw;
+
+
+}
 
 
 
