@@ -273,7 +273,7 @@ html{
   
   .bonus1{
   
-    font-size:50px;
+    font-size:3em;
     
     -webkit-text-stroke: 2px black;
     text-stroke: 2px black;
@@ -281,11 +281,7 @@ html{
   
    
    
-    height: -moz-available;
    
-    height: -webkit-fill-available;  
-   
-    height: fill-available;
   }
   
   div.p3{
@@ -599,11 +595,6 @@ button{
 
  
  
-  height: -moz-available;
- 
-  height: -webkit-fill-available;  
- 
-  height: fill-available;
 }
 
 
@@ -1391,12 +1382,7 @@ button{
   background: lightgrey;
 
  
- 
-  height: -moz-available;
- 
-  height: -webkit-fill-available;  
- 
-  height: fill-available;
+
 }
 
 
@@ -2113,12 +2099,7 @@ button.color{
       background: lightgrey;
       float:left;
      
-     
-      height: -moz-available;
-     
-      height: -webkit-fill-available;  
-     
-      height: fill-available;
+   
     }
   
   }
@@ -2249,12 +2230,8 @@ button.auto3{
       background: lightgrey;
       float:left;
      
-     
-      height: -moz-available;
-     
-      height: -webkit-fill-available;  
-     
-      height: fill-available;
+   
+      
     }
   
   }
