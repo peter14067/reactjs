@@ -15,7 +15,7 @@ const yellow = 'yellow';
 const orange = 'orange';
  const myVar="";
 const blue='blue';
-let time = 40;//倒數7秒
+let time = 5;//倒數7秒
 let mny="";
 let m="";
 var bg=require('H:/工作備分/新增資料夾 (2)/reactjs/myfirstreact/src/demo.png')
@@ -584,16 +584,16 @@ componentWillUnmount() {
     return ( 
      
       <div style={{backgroundColor:"lightgrey"}}>      
-      <div style={{display:"block"}}>
+      <div style={{display:"block"}}></div>
       <div class="h1">下次開獎倒數  {this.state.time}  秒    累積獎金 $ {this.state.money}  </div>  
-          </div>
-      <div  style={{backgroundColor:"lightgrey",width:"100%"}}>
+        
+     
       <div><h2 style={{backgroundColor:"grey"}}> {this.state.hint}</h2>
       <div class="p3">{selectnumber}</div>
       </div>
       <div class='container1' >{lotterynumber}      </div>
       
-     </div>
+     
      
     
      <div  style={{backgroundColor:"lightgrey",display:"block"}}>
@@ -628,19 +628,21 @@ componentWillUnmount() {
         </div>
 
         <h1>中獎結果</h1>
-        <h2 style={{color:blue}}>{this.state.cog}</h2>
-
+        <h4 style={{marginBottom:"2vh",fontSize:"1.5em",color:blue,width:"30vw",height:"10vh",display:"block"}}>{this.state.cog}</h4>
+        
         <h1>中獎號碼</h1>
 
         <div>{prizenumber}</div>
 
         
-        <h1>中獎金額</h1>
-        <div class='bonus1'>{this.state.bonus}</div>
+        <h1 style={{display:"block"}}>中獎金額</h1>
+        <div class="bonus1">{this.state.bonus}</div>
          
-
-        
-
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <button 
           id="button2"
           type="button" 

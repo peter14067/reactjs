@@ -3,6 +3,7 @@
 
 html{
   background-color: lightgrey;
+  height:200vh;
 }
 
 
@@ -65,12 +66,13 @@ html{
   }
   
   h2{
-    font: 30px "Century Gothic", Futura, sans-serif;
-   
-    vertical-align:text-bottom;
-    display: block;
-      display: flex;
-    flex-wrap: wrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2vw;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  float: left;
+  display: block;
+  width:100%;
+  color:white
   }
   
   
@@ -122,7 +124,7 @@ html{
     color: #fff;
     display: block;
     float: left;
-    height: 38px;
+    height: 33px;
     padding: 7px 8px 13px 8px;
     text-align: center;
     vertical-align: top;
@@ -272,9 +274,9 @@ html{
   
   
   .bonus1{
-  
+    height:40vh;
     font-size:3em;
-    
+   
     -webkit-text-stroke: 2px black;
     text-stroke: 2px black;
     background: lightgrey;
@@ -389,12 +391,13 @@ h1{
 }
 
 h2{
-  font: 30px "Century Gothic", Futura, sans-serif;
- 
-  vertical-align:text-bottom;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2vw;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  float: left;
   display: block;
-    display: flex;
-  flex-wrap: wrap;
+  width:100%;
+  color:white
 }
 
 
@@ -454,7 +457,7 @@ p2{
   color: #fff;
   display: block;
   float: left;
-  height: 38px;
+  height: 33px;
   padding: 7px 8px 13px 8px;
   text-align: center;
   vertical-align: top;
@@ -586,7 +589,7 @@ button{
 
 
 .bonus1{
-
+  height:40vh;
   font-size:50px;
   color: white; 
   -webkit-text-stroke: 2px black;
@@ -667,12 +670,13 @@ h1{
 }
 
 h2{
-  font: 30px "Century Gothic", Futura, sans-serif;
- 
-  vertical-align:text-bottom;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2vw;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  float: left;
   display: block;
-    display: flex;
-  flex-wrap: wrap;
+  width:100%;
+  color:white
 }
 
 
@@ -730,7 +734,7 @@ p2{
   color: #fff;
   display: block;
   float: left;
-  height: 38px;
+  height: 33px;
   padding: 7px 8px 13px 8px;
   text-align: center;
   vertical-align: top;
@@ -1374,6 +1378,7 @@ button{
 
 
 .bonus1{
+  height:40vh;
 
   font-size:50px;
   color: white; 
@@ -1516,6 +1521,7 @@ button.color{
   body{
     margin:0px;
   }
+
 
   h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -2092,7 +2098,7 @@ button.color{
 
 
     .bonus1{
-  
+      height:40vh;
       font-size:30px;
       color: white; 
       -webkit-text-stroke: 2px black;
@@ -2223,7 +2229,7 @@ button.auto3{
 
 
     .bonus1{
-  
+      height:40vh;
       font-size:30px;
       color: white; 
       -webkit-text-stroke: 2px black;
