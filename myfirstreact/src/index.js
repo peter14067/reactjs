@@ -630,7 +630,9 @@ componentWillUnmount() {
         <p4>{lists1}</p4>        
         
         <h1>中獎號碼</h1>
-        <div>{prizenumber}</div>        
+        <div>{prizenumber}</div>
+
+        
         <div class='bonus1'>{this.state.cog}</div>
         <h1>中獎金額</h1>
         <div class='bonus1'>{this.state.bonus}</div>
