@@ -628,7 +628,7 @@ componentWillUnmount() {
         </div>
 
         <h1>中獎結果</h1>
-        <h4 style={{marginBottom:"2vh",fontSize:"1.5em",color:blue,width:"30vw",height:"10vh",display:"block"}}>{this.state.cog}</h4>
+        <h4 style={{marginBottom:"35vh",fontSize:"1.5em",color:blue,width:"50vw",height:"5vh",display:"block"}}>{this.state.cog}</h4>
         
         <h1>中獎號碼</h1>
 
