@@ -1860,6 +1860,12 @@ button.color{
           
           }
 
+
+
+
+
+          
+
           @media (min-width: 1130px ) {
 
             body{
@@ -2200,3 +2206,78 @@ button.auto3{
     }
   
   }
+
+
+  @media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px)
+    and (device-width : 414px)
+    and (device-height : 736px)
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 3) 
+    and (-webkit-device-pixel-ratio : 3)
+{ 
+
+
+
+
+
+  body{
+    margin:0px;
+  }
+
+  h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    float: left;
+    display: block;
+    width:100%;
+    color:white
+    }
+
+div.p3{
+  height:20.8vh;
+    width:80vw;
+}
+
+
+
+  p1{
+    font-size:1.5em ;
+    height:1vh;
+    width:9vw;
+  }
+
+.container1{
+  height:45vh;
+}
+
+button.auto{
+  font-size: 1em;
+  width:58.8%;
+  background-color:greenyellow ;
+  position:absolute;
+
+
+}
+
+
+
+button.color{
+  font-size: 1.8em;
+  
+  float:left;
+  text-align: center;
+  
+  height:6vh;
+  width:12.7vw;
+
+
+}
+
+
+
+
+
+}
