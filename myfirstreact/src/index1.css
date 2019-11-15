@@ -2320,7 +2320,7 @@ button.color{
 }
 
 
-@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){
+@media (device-height:736px) and (orientation : landscape){
   /* 兼容iphone6 Plus ，plus的样式写在此处*/
 
   html{
