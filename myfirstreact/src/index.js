@@ -635,7 +635,7 @@ componentWillUnmount() {
         <div >{prizenumber}</div>
 
         
-        <h1 style={{display:"block"}}>中獎金額</h1>
+        <h1>中獎金額</h1>
         <div class="bonus1">{this.state.bonus}</div>
          
         <br></br>
