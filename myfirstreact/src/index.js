@@ -588,7 +588,7 @@ componentWillUnmount() {
       <div class="h1">下次開獎倒數  {this.state.time}  秒    累積獎金 $ {this.state.money}  </div>  
           </div>
       <div  style={{backgroundColor:"lightgrey",width:"100%"}}>
-      <div><h2 style={{backgroundColor:"grey"}}> {this.state.hint}</h2>
+      <div><h2 style={{backgroundColor:"lightgrey"}}> {this.state.hint}</h2>
       <div class="p3">{selectnumber}</div>
       </div>
       <div class='container1' >{lotterynumber}      </div>
